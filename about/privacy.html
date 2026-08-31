@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy — SideKids</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <div class="breadcrumb"><a href="../index.html">Home</a> / Privacy</div>
+
+    <header>
+      <h1>Privacy by Architecture</h1>
+      <p class="tagline">Not only by policy</p>
+    </header>
+
+    <section>
+      <p>SideKids is built on a simple principle: <strong>whatever can be stored and processed on the child's device or the family's own server, is.</strong> No SideKids app sends data to third parties to provide its core function.</p>
+    </section>
+
+    <section>
+      <h2>Core Privacy Principles</h2>
+
+      <h3>1. Local first</h3>
+      <p>Whatever can be stored and processed on the child's device or the family's own server, is. No SideKids app sends data to third parties to provide its core function.</p>
+
+      <h3>2. Accounts stay server-side</h3>
+      <p>Credentials for external services (e.g. a cloud photo library) exist only on the family server. The child's device never holds account secrets.</p>
+
+      <h3>3. The private network is the default boundary</h3>
+      <p>Family services (photo server, screen-time server, media library) are reachable only inside the family's private network (VPN/mesh). Nothing is exposed to the public internet unless a function explicitly requires it.</p>
+
+      <h3>4. No telemetry</h3>
+      <p>SideKids apps contain no analytics, no crash reporters that phone home, no advertising SDKs.</p>
+
+      <h3>5. Data minimization for children specifically</h3>
+      <p>Location clustering happens without external geocoding services; face recognition is either fully switchable-off or not built at all; social features default to private.</p>
+    </section>
+
+    <section>
+      <h2>Data Inventory</h2>
+
+      <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin: 1.5rem 0; border-collapse: collapse;">
+        <tr style="background: #f5f5f5;">
+          <th>Component</th>
+          <th>Local (Device)</th>
+          <th>Family Server</th>
+          <th>External</th>
+        </tr>
+        <tr>
+          <td><strong>SidePlay</strong></td>
+          <td>Media, favorites, resume</td>
+          <td>Media library (self-hosted)</td>
+          <td>None required</td>
+        </tr>
+        <tr>
+          <td><strong>SideTube</strong></td>
+          <td>Watch progress, time budgets</td>
+          <td>None</td>
+          <td>YouTube APIs (optional, parent approval step)</td>
+        </tr>
+        <tr>
+          <td><strong>SideFoto</strong></td>
+          <td>Photos, thumbnails, sync state</td>
+          <td>Originals, previews, shares</td>
+          <td>Optional cloud import (server-to-server only)</td>
+        </tr>
+        <tr>
+          <td><strong>SideLimit</strong></td>
+          <td>Rules, usage counters (enforced locally)</td>
+          <td>Rule sync, family accounts</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td><strong>SideHome</strong></td>
+          <td>Launcher settings</td>
+          <td>—</td>
+          <td>Optional weather (opt-in)</td>
+        </tr>
+        <tr>
+          <td><strong>SidePix</strong></td>
+          <td>Drafts, session</td>
+          <td>Posts, comments, accounts</td>
+          <td>Push transport; optional geocoding (opt-in)</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Logs</h2>
+      <p>Servers keep operational logs only, on the family server, with no third-party log shipping. Logs contain no message contents.</p>
+    </section>
+
+    <section>
+      <h2>Parent and Child Accounts</h2>
+      <p>Children are first-class users with their own accounts. Parent capabilities are limited, visible to the child, and designed to be reduced over time.</p>
+
+      <p>No SideKids component gives parents access to:</p>
+      <ul>
+        <li>Message contents</li>
+        <li>Browsing history</li>
+        <li>Location trails</li>
+        <li>Screen contents</li>
+      </ul>
+
+      <p>These limits are <strong>architectural</strong>, not merely policy. The capabilities are not built.</p>
+    </section>
+
+    <section>
+      <h2>What SideKids Never Does</h2>
+      <ul>
+        <li>Sell, share or transmit children's data to third parties</li>
+        <li>Profile usage for recommendations or engagement</li>
+        <li>Hide a data flow from the child that the parents can see</li>
+      </ul>
+    </section>
+
+    <section id="sidetube">
+      <h2>App-specific: SideTube (iOS)</h2>
+      <p>This section is the privacy policy for the SideTube iOS app published by SideKids. Last updated: 31 August 2026.</p>
+      <h3>Data stored on the device only</h3>
+      <ul>
+        <li>Child profiles (name, age band, settings), the parent-approved whitelist and review decisions</li>
+        <li>Watch history per profile (video, duration, time) — used for "Continue watching" and the daily time limit</li>
+        <li>The parent PIN as a cryptographic hash in the device keychain</li>
+      </ul>
+      <p>None of this leaves the device. Deleting the app deletes the data.</p>
+      <h3>Requests to YouTube (Google)</h3>
+      <p>To display and play videos the app contacts YouTube services (oEmbed, RSS feeds, public channel pages, optionally the YouTube Data API, and the embedded YouTube player). Google receives the IP address and the requested video/channel identifiers. No user accounts are used and no identifiers of the child are transmitted. The embedded player is subject to Google's privacy policy. SideTube sets no advertising cookies; a minimal consent cookie is sent only for reading public channel pages within a single request.</p>
+      <h3>Recommendations</h3>
+      <p>If a video is recommended via Messages or Signal, the title and link are handed to that app. SideTube does not see recipients and stores nothing. In child mode this requires the parent PIN.</p>
+      <h3>Children</h3>
+      <p>SideTube is made for children under parental supervision, including children under 13. It collects no personal data from children and shares none with third parties (COPPA / GDPR Art. 8). There are no ads, no analytics and no third-party SDKs.</p>
+      <h3>Contact</h3>
+      <p>Questions: <a href="https://github.com/sidekids">github.com/sidekids</a>.</p>
+
+      <h3>Datenschutzerklärung SideTube (Deutsch)</h3>
+      <p>Alle Daten (Profile, Whitelist, Prüfentscheidungen, Sehverlauf, PIN-Hash) bleiben ausschließlich auf dem Gerät. Zum Anzeigen und Abspielen werden Anfragen an YouTube (Google) gestellt — dabei erhält Google IP-Adresse und Video-/Kanalkennungen, keine Kennungen des Kindes. Der eingebettete Player unterliegt der Datenschutzerklärung von Google. Empfehlungen per Nachricht oder Signal übergeben nur Titel und Link an die gewählte App. Die App richtet sich auch an Kinder unter 13; es werden keine personenbezogenen Daten von Kindern erhoben oder weitergegeben (COPPA/DSGVO Art. 8). Keine Werbung, keine Analyse-Dienste, keine Drittanbieter-SDKs. Kontakt: github.com/sidekids.</p>
+    </section>
+
+    <footer>
+      <p><a href="../index.html">← Back to home</a></p>
+    </footer>
+  </main>
+</body>
+</html>

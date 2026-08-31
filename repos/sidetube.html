@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SideTube — SideKids</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <div class="breadcrumb"><a href="../index.html">Home</a> / Repositories</div>
+
+    <header>
+      <h1>SideTube</h1>
+      <p class="tagline">Curated video for a child's first phone</p>
+    </header>
+
+    <section>
+      <h2>What it is</h2>
+      <p>Parents review and approve channels, videos and playlists — the child chooses freely within that selection. No feed, no trends, no shorts, no comments, no autoplay. New content is never visible until an adult has approved it.</p>
+      <p>SideTube exists twice: an <strong>iOS app</strong> (SwiftUI, in active development) and an <strong>Android app</strong> (a key-navigation fork of the open-source app YouTubeWhitelist).</p>
+    </section>
+
+    <section>
+      <h2>Features (iOS)</h2>
+      <ul>
+        <li>Per-child profiles with age bands (3–5, 6–8, 9–11, 12+)</li>
+        <li>Editorial workflow: new videos start as "review required"; parents approve, reject or defer — with an audit trail</li>
+        <li>Source trust levels: trusted children's sources, trusted series, per-video review, parent-only, blocked</li>
+        <li>Categories such as Knowledge, Nature, Technology, Stories, Drawing Manga (8+), Anime &amp; Manga (12+)</li>
+        <li>Home with "Continue watching", channels and recently watched; library; search limited to approved content</li>
+        <li>Click-wheel remote (haptic, VoiceOver-friendly) as an optional bottom sheet</li>
+        <li>Sleep timer with volume fade, daily time limit, parent PIN with lockout</li>
+        <li>Recommend a video to family via Messages or Signal — behind a parental gate</li>
+        <li>Autoplay off by default; everything stored locally, no accounts, no tracking</li>
+      </ul>
+      <h2>Features (Android)</h2>
+      <ul>
+        <li>Per-child profiles, approved "subscriptions", continue-watching, T9 search</li>
+        <li>Daily time budgets, quiet hours, sleep timer with volume fade, watch-time statistics</li>
+        <li>Local parent account (no Google login)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why This Project Exists</h2>
+      <p>YouTube hosts much of what children genuinely want to watch — buried in an attention machine. SideTube keeps the content and removes the machine.</p>
+    </section>
+
+    <section>
+      <h2>Technical Details</h2>
+      <div class="repo-card">
+        <p><strong>iOS:</strong> Swift · SwiftUI · SwiftData · WebKit (official YouTube IFrame player) · iOS 17+</p>
+        <p><strong>Android:</strong> Kotlin · Jetpack Compose · Material 3 · multi-module (MVVM) · Room</p>
+        <p><strong>Data sources:</strong> YouTube oEmbed / RSS first, YouTube Data API as fallback — read-only, no write actions</p>
+        <p><strong>Status:</strong> iOS in active development (TestFlight planned); Android fork feature-complete, on-device test pass pending</p>
+        <p><strong>License:</strong> GPL-3.0</p>
+        <p><strong>Privacy:</strong> see <a href="../about/privacy.html#sidetube">Privacy — SideTube</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p><a href="../index.html">← Back to home</a></p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security — SideKids</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <div class="breadcrumb"><a href="../index.html">Home</a> / Security</div>
+
+    <header>
+      <h1>Security Model</h1>
+    </header>
+
+    <section>
+      <p>SideKids assumes a family-operated deployment: apps on the child's device, services on a family-owned server inside a private network (VPN/mesh). The public internet is not a trust boundary we expose services to.</p>
+    </section>
+
+    <section>
+      <h2>Principles</h2>
+
+      <h3>Fail closed</h3>
+      <p>Services require authentication for everything; unauthenticated requests are rejected, not degraded.</p>
+
+      <h3>Secrets are hashed or absent</h3>
+      <p>Device passwords are stored as hashes only. Cloud-account credentials exist solely on the family server.</p>
+
+      <h3>No enumeration</h3>
+      <p>Public identifiers are random (ULIDs), never sequential.</p>
+
+      <h3>Brute-force protection</h3>
+      <p>PIN/pattern entries rate-limit and lock.</p>
+
+      <h3>Reproducible operations</h3>
+      <p>Upstreams are pinned by commit and image digest; rebuild and restore procedures are scripted and tested.</p>
+    </section>
+
+    <section>
+      <h2>Child Accounts</h2>
+      <p>Children authenticate with device-bound credentials. A lost device can be invalidated server-side without touching the child's data. Child accounts cannot be silently impersonated: administrative actions are visible.</p>
+    </section>
+
+    <section>
+      <h2>Parent Rights — Deliberately Limited</h2>
+
+      <h3>Parent tooling can:</h3>
+      <ul>
+        <li>Approve content</li>
+        <li>Set time budgets</li>
+        <li>Set storage limits</li>
+        <li>Share selected media</li>
+        <li>Locate/ring a device in an emergency</li>
+      </ul>
+
+      <h3>Parent tooling can <strong>not</strong>:</h3>
+      <ul>
+        <li>Read messages</li>
+        <li>View screen contents</li>
+        <li>Track location continuously</li>
+        <li>Access the child's account data covertly</li>
+      </ul>
+
+      <p>These limits are <strong>architectural</strong> (the capabilities are not built), not merely policy.</p>
+    </section>
+
+    <section>
+      <h2>Tokens and Authentication</h2>
+
+      <ul>
+        <li>Server APIs use bearer tokens or HttpOnly session cookies over TLS.</li>
+        <li>Tokens are generated with ≥256 bits of entropy; only hashes are stored.</li>
+        <li>Share links carry expiry, optional passwords and access limits.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Communication</h2>
+      <p>All service communication runs inside the private network or over TLS. Nothing listens on public interfaces by default; reverse proxies allow-list the private network and deny everything else.</p>
+    </section>
+
+    <section>
+      <h2>Vulnerability Reporting</h2>
+      <p>Please report vulnerabilities privately via GitHub Private Vulnerability Reporting on the affected repository. Do not open public issues for security problems.</p>
+      <p>Response target: within 14 days.</p>
+    </section>
+
+    <footer>
+      <p><a href="../index.html">← Back to home</a></p>
+    </footer>
+  </main>
+</body>
+</html>
