@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SideTube — SideKids (Deutsch)</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <div class="breadcrumb"><a href="../index.html">Start</a> / Apps · <a href="sidetube.html" lang="en" hreflang="en">English</a></div>
+
+    <header>
+      <h1>SideTube</h1>
+      <p class="tagline">Kuratierte Videos für das erste Handy eines Kindes</p>
+    </header>
+
+    <section>
+      <h2>Worum es geht</h2>
+      <p>Eltern prüfen Kanäle, Videos und Playlists und geben sie frei — das Kind wählt frei innerhalb dieser Auswahl. Kein Feed, keine Trends, keine Shorts, keine Kommentare, kein Autoplay. Neue Inhalte sind erst sichtbar, wenn ein Erwachsener sie freigegeben hat.</p>
+      <p>SideTube gibt es zweimal: als <strong>iOS-App</strong> (SwiftUI, in aktiver Entwicklung) und als <strong>Android-App</strong> (ein tastenbedienbarer Fork der Open-Source-App YouTubeWhitelist).</p>
+    </section>
+
+    <section id="ios">
+      <h2>iOS – Bedienung &amp; Funktionen</h2>
+      <figure class="feature-graphic">
+        <a href="../assets/sidetube-ios-features-de.png"><img src="../assets/sidetube-ios-features-de.png" alt="SideTube iOS – Bedienung und Funktionen: kuratierte Inhalte, Übersicht, Playlists, Suche, Schutz; Hauptbereiche; Navigation unten; Bedienung mit Clickwheel; Gesten; Fernbedienung" loading="lazy"></a>
+        <figcaption>Konzeptübersicht der SideTube-iOS-App (zum Vergrößern anklicken). Die Bildschirme sind illustrativ und können vom aktuellen Stand abweichen.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Funktionen (iOS)</h2>
+      <ul>
+        <li>Profile pro Kind mit Altersstufen (3–5, 6–8, 9–11, ab 12)</li>
+        <li>Redaktioneller Ablauf: neue Videos beginnen als „Prüfung nötig“; Eltern geben frei, lehnen ab oder verschieben — mit Verlauf</li>
+        <li>Sicherheitsstufen für Quellen: vertrauenswürdige Kinderquelle, vertrauenswürdige Reihe, Einzelprüfung, nur für Eltern, gesperrt</li>
+        <li>Kategorien wie Wissen, Natur, Technik, Geschichten, Manga zeichnen (ab 8), Anime &amp; Manga (ab 12)</li>
+        <li>Start mit „Weiterschauen“, Kanälen und Zuletzt geschaut; Mediathek; Suche nur in freigegebenen Inhalten</li>
+        <li>Fernbedienung mit Click-Wheel (haptisch, mit VoiceOver bedienbar) als einblendbares Sheet</li>
+        <li>Schlaf-Timer mit Ausblenden, Tageslimit, Eltern-PIN mit Sperrstufen</li>
+        <li>Video an die Familie empfehlen per Nachrichten oder Signal — hinter einer Elternschranke</li>
+        <li>Autoplay standardmäßig aus; alles lokal gespeichert, keine Konten, kein Tracking</li>
+      </ul>
+      <h2>Funktionen (Android)</h2>
+      <ul>
+        <li>Profile pro Kind, freigegebene „Abos“, Weiterschauen, T9-Suche</li>
+        <li>Tägliche Zeitbudgets, Ruhezeiten, Schlaf-Timer mit Ausblenden, Sehzeit-Statistik</li>
+        <li>Lokales Elternkonto (kein Google-Login)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Warum es dieses Projekt gibt</h2>
+      <p>Auf YouTube liegt vieles, was Kinder wirklich sehen wollen — vergraben in einer Aufmerksamkeitsmaschine. SideTube behält den Inhalt und entfernt die Maschine.</p>
+    </section>
+
+    <section>
+      <h2>Technische Details</h2>
+      <div class="repo-card">
+        <p><strong>iOS:</strong> Swift · SwiftUI · SwiftData · WebKit (official YouTube IFrame player) · iOS 17+</p>
+        <p><strong>Android:</strong> Kotlin · Jetpack Compose · Material 3 · multi-module (MVVM) · Room</p>
+        <p><strong>Datenquellen:</strong> YouTube oEmbed / RSS zuerst, YouTube Data API als Ausweichweg — nur lesend, keine Schreibaktionen</p>
+        <p><strong>Status:</strong> iOS in aktiver Entwicklung (TestFlight geplant); Android-Fork funktional vollständig, Gerätetest offen</p>
+        <p><strong>Lizenz:</strong> GPL-3.0</p>
+        <p><strong>Datenschutz:</strong> siehe <a href="../about/privacy.html#sidetube">Datenschutz — SideTube</a> (Abschnitt auf Deutsch enthalten)</p>
+      </div>
+    </section>
+
+    <footer>
+      <p><a href="../index.html">← Zurück zur Startseite</a></p>
+    </footer>
+  </main>
+</body>
+</html>

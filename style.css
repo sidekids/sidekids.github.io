@@ -150,3 +150,7 @@ code {
 .breadcrumb a {
   color: #000;
 }
+
+.feature-graphic { margin: 1rem 0; }
+.feature-graphic img { max-width: 100%; height: auto; border-radius: 12px; display: block; }
+.feature-graphic figcaption { font-size: 0.85rem; opacity: 0.75; margin-top: 0.5rem; }
