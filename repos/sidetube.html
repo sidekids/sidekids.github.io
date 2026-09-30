@@ -3,73 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SideTube — SideKids</title>
+  <meta name="description" content="SideTube is a curated video library for a child's first phone — no feed, no tracking, no autoplay.">
+  <meta name="theme-color" content="#090A0C">
+  <title>SideTube — Curated videos for children</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../palette.css">
 </head>
 <body>
-  <main>
-    <div class="breadcrumb"><a href="../index.html">Home</a> / Apps · <a href="sidetube.de.html" lang="de" hreflang="de">Deutsch</a></div>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <main id="content" class="product-page">
+    <div class="breadcrumb"><a href="../index.en.html">SideKids</a><span aria-hidden="true"> / </span> SideTube <span aria-hidden="true">·</span> <a class="language-switcher" href="sidetube.de.html" lang="de" hreflang="de">Deutsch</a></div>
 
-    <header>
-      <h1>SideTube</h1>
-      <p class="tagline">Curated video for a child's first phone</p>
+    <header class="product-hero">
+      <div class="product-hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> SideTube · iOS &amp; Android</p>
+        <h1>Curated videos.<br><em>A calmer start.</em></h1>
+        <p class="product-lead">SideTube gives children a video library of their own. Adults set the frame, children decide for themselves what to watch within it.</p>
+        <div class="product-actions"><a class="button button-primary" href="#downloads">See availability <span aria-hidden="true">↓</span></a><a class="text-link" href="#principle">How it works <span aria-hidden="true">→</span></a></div>
+        <ul class="product-signals" aria-label="Key properties"><li>No feeds</li><li>No tracking</li><li>Autoplay off</li></ul>
+      </div>
+      <figure class="product-visual"><a href="../assets/sidetube-ios-features-en.png"><img src="../assets/sidetube-ios-features-en.png" alt="Concept overview of the SideTube iOS app with library, search, safety and remote control"></a><figcaption>Concept overview · open to enlarge. Screens are illustrative and may differ from the current build.</figcaption></figure>
     </header>
 
-    <section>
-      <h2>What it is</h2>
-      <p>Parents review and approve channels, videos and playlists — the child chooses freely within that selection. No feed, no trends, no shorts, no comments, no autoplay. New content is never visible until an adult has approved it.</p>
-      <p>SideTube exists twice: an <strong>iOS app</strong> (SwiftUI, in active development) and an <strong>Android app</strong> (a key-navigation fork of the open-source app YouTubeWhitelist).</p>
+    <section class="product-section product-intro" id="principle" aria-labelledby="principle-title">
+      <div class="section-kicker">The principle</div>
+      <h2 id="principle-title">The good stays.<br><em>The attention machine goes.</em></h2>
+      <div class="intro-columns"><p>YouTube hosts much of what children genuinely want to watch. SideTube turns it into a small, protected space: parents review channels, videos and playlists in advance.</p><p>Then children choose on their own. No endless swiping, no trends, no comments. A tool that stops when the task is done.</p></div>
     </section>
 
-    <section id="ios">
-      <h2>iOS – Usage &amp; Features</h2>
-      <figure class="feature-graphic">
-        <a href="../assets/sidetube-ios-features-en.png"><img src="../assets/sidetube-ios-features-en.png" alt="SideTube iOS – usage and features: curated content, overview, playlists, search, safety; main areas; bottom navigation; click-wheel control; gestures; remote control" loading="lazy"></a>
-        <figcaption>Concept overview of the SideTube iOS app (click to enlarge). Screens are illustrative and may differ from the current build.</figcaption>
-      </figure>
-    </section>
-
-    <section>
-      <h2>Features (iOS)</h2>
-      <ul>
-        <li>Per-child profiles with age bands (3–5, 6–8, 9–11, 12+)</li>
-        <li>Editorial workflow: new videos start as "review required"; parents approve, reject or defer — with an audit trail</li>
-        <li>Source trust levels: trusted children's sources, trusted series, per-video review, parent-only, blocked</li>
-        <li>Categories such as Knowledge, Nature, Technology, Stories, Drawing Manga (8+), Anime &amp; Manga (12+)</li>
-        <li>Home with "Continue watching", channels and recently watched; library; search limited to approved content</li>
-        <li>Click-wheel remote (haptic, VoiceOver-friendly) as an optional bottom sheet</li>
-        <li>Sleep timer with volume fade, daily time limit, parent PIN with lockout</li>
-        <li>Recommend a video to family via Messages or Signal — behind a parental gate</li>
-        <li>Autoplay off by default; everything stored locally, no accounts, no tracking</li>
-      </ul>
-      <h2>Features (Android)</h2>
-      <ul>
-        <li>Per-child profiles, approved "subscriptions", continue-watching, T9 search</li>
-        <li>Daily time budgets, quiet hours, sleep timer with volume fade, watch-time statistics</li>
-        <li>Local parent account (no Google login)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Why This Project Exists</h2>
-      <p>YouTube hosts much of what children genuinely want to watch — buried in an attention machine. SideTube keeps the content and removes the machine.</p>
-    </section>
-
-    <section>
-      <h2>Technical Details</h2>
-      <div class="repo-card">
-        <p><strong>iOS:</strong> Swift · SwiftUI · SwiftData · WebKit (official YouTube IFrame player) · iOS 17+</p>
-        <p><strong>Android:</strong> Kotlin · Jetpack Compose · Material 3 · multi-module (MVVM) · Room</p>
-        <p><strong>Data sources:</strong> YouTube oEmbed / RSS first, YouTube Data API as fallback — read-only, no write actions</p>
-        <p><strong>Status:</strong> iOS in active development (TestFlight planned); Android fork feature-complete, on-device test pass pending</p>
-        <p><strong>License:</strong> GPL-3.0</p>
-        <p><strong>Privacy:</strong> see <a href="../about/privacy.html#sidetube">Privacy — SideTube</a></p>
+    <section class="product-section" aria-labelledby="features-title">
+      <div class="section-kicker">Everyday use</div><h2 id="features-title">Clear for children.<br><em>Accountable for parents.</em></h2>
+      <div class="feature-grid">
+        <article class="feature-block"><span class="feature-symbol" aria-hidden="true">⌂</span><h3>For children</h3><p>A clear place with familiar categories and a search that only finds approved content.</p><ul><li>Continue watching and library</li><li>Channels and playlists</li><li>Click-wheel control</li><li>No comments or trends</li></ul></article>
+        <article class="feature-block"><span class="feature-symbol" aria-hidden="true">◇</span><h3>For parents</h3><p>A traceable approval process instead of a black box. Decisions can be explained, changed and talked about together.</p><ul><li>Approve, reject or defer</li><li>Age bands and trust levels</li><li>Parent PIN, daily limit and sleep mode</li><li>History of approvals</li></ul></article>
+        <article class="feature-block"><span class="feature-symbol" aria-hidden="true">◌</span><h3>For families</h3><p>SideTube sticks to the essentials and treats privacy as a technical default.</p><ul><li>Stored locally</li><li>No accounts and no tracking</li><li>Autoplay off by default</li><li>Open source under GPL-3.0</li></ul></article>
       </div>
     </section>
 
-    <footer>
-      <p><a href="../index.html">← Back to home</a></p>
-    </footer>
+    <section class="product-section availability-section" id="downloads" aria-labelledby="availability-title">
+      <div><div class="section-kicker">Try it</div><h2 id="availability-title">Ready for<br><em>the next step?</em></h2><p>SideTube is being built for iOS and Android. Official download and TestFlight links will be published once the builds are ready for families.</p></div>
+      <div class="availability-list"><div class="availability-card"><span class="platform-badge" aria-hidden="true">●</span><div><h3>iPhone &amp; iPad</h3><p>TestFlight coming</p></div><span class="availability-state">Soon</span></div><div class="availability-card"><span class="platform-badge" aria-hidden="true">◆</span><div><h3>Android</h3><p>APK / Play Store coming</p></div><span class="availability-state">Soon</span></div><a class="availability-card source-card" href="https://github.com/sidekids/sidetube" target="_blank" rel="noopener"><span class="platform-badge" aria-hidden="true">{ }</span><div><h3>Source code</h3><p>Open on GitHub</p></div><span class="source-arrow" aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="product-section technical-section" aria-labelledby="technical-title"><details><summary id="technical-title">Technical details and privacy</summary><div class="technical-grid"><p><strong>iOS</strong><br>Swift · SwiftUI · SwiftData · WebKit (official YouTube IFrame player) · iOS 17+</p><p><strong>Android</strong><br>Kotlin · Jetpack Compose · Material 3 · Room; key-navigation fork of YouTubeWhitelist</p><p><strong>Data sources</strong><br>YouTube oEmbed / RSS first, Data API as fallback — read-only</p><p><strong>Status &amp; privacy</strong><br>iOS in active development; Android fork functional, device test pending · <a href="../about/privacy.html#sidetube">Privacy — SideTube</a></p></div></details></section>
+
+    <footer class="product-footer"><a href="../index.en.html">← Back to SideKids</a><span>·</span><a href="sidetube.de.html" lang="de" hreflang="de">Deutsch</a></footer>
   </main>
 </body>
 </html>

@@ -1,0 +1,8 @@
+/* Hardware accent for the real orange SidePhone hero asset. */
+:root{--hardware-accent:#D98532}
+.sidephone-photo{position:relative;display:block;width:min(100%,390px);height:auto;min-height:0;padding:0;border:7px solid #050607;border-radius:29px;background:#050607;box-shadow:18px 18px 0 var(--hardware-accent);overflow:hidden;transform:rotate(-2deg)}
+.sidephone-photo img{display:block;width:100%;height:auto;border-radius:20px}.sidephone-photo>span{position:absolute;right:14px;bottom:12px;padding:5px 8px;border-radius:99px;background:#101418dd;color:#F2F4F7;font-size:.58rem;font-weight:700}
+/* The English landing page uses the same real product image. */
+body:has(a[href="index.en.html"]) .app-preview{height:500px;min-height:0;padding:0;background:#050607 url("assets/sidephone-sidetube.png") center/contain no-repeat;box-shadow:18px 18px 0 var(--hardware-accent);border-color:#050607}
+body:has(a[href="index.en.html"]) .app-preview>*{visibility:hidden}
+@media(max-width:520px){.sidephone-photo{width:min(100%,330px)}body:has(a[href="index.en.html"]) .app-preview{height:430px}}
