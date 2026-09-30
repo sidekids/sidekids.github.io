@@ -173,3 +173,13 @@ h1,h2,h3{overflow-wrap:break-word}
 @media(max-width:520px){h1,h2,h3{hyphens:auto;-webkit-hyphens:auto}}
 /* Wide tables scroll inside themselves instead of widening the page. */
 body>main table{display:block;max-width:100%;overflow-x:auto}
+/* SidePlay: source list as hero visual; planned sources are visibly provisional. */
+.source-visual{padding:26px;border:1px solid var(--border-default);border-radius:18px;background:var(--surface-secondary);box-shadow:18px 18px 0 var(--brand-primary)}
+.source-visual .section-kicker{margin-bottom:14px}
+.source-planned{border-style:dashed;background:transparent}
+.source-planned .availability-state{background:transparent;border:1px dashed var(--border-default)}
+.app-showcase-alt .source-visual{width:min(100%,440px);justify-self:center}
+@media(max-width:520px){.source-visual{padding:18px;box-shadow:10px 10px 0 var(--brand-primary)}}
+body>main pre{max-width:100%;overflow-x:auto;white-space:pre-wrap}
+/* Neutral notice for third-party names (no endorsement implied). */
+.trademark-note{max-width:720px;margin:24px 0 28px!important;color:var(--text-muted)!important;font-size:.78rem!important;line-height:1.5}
