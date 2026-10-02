@@ -101,6 +101,38 @@
     "video": "assets/video/sidetube/profilwechsel.mp4",
     "bild": "assets/video/sidetube/profilwechsel.jpg",
     "dauer": 21
+   },
+   {
+    "id": "T14",
+    "titel": "Themenwunsch",
+    "text": "Ein Wunsch an die Eltern – statt offener Suche.",
+    "video": "assets/video/sidetube/themenwunsch.mp4",
+    "bild": "assets/video/sidetube/themenwunsch.jpg",
+    "dauer": 31
+   },
+   {
+    "id": "T15",
+    "titel": "Mehr davon",
+    "text": "Mehr davon wünschen.",
+    "video": "assets/video/sidetube/mehr-davon.mp4",
+    "bild": "assets/video/sidetube/mehr-davon.jpg",
+    "dauer": 25
+   },
+   {
+    "id": "T16",
+    "titel": "Neu bei bekannten Kanälen",
+    "text": "Neu bei bekannten Kanälen – erst nach Freigabe abspielbar.",
+    "video": "assets/video/sidetube/neu-bei-bekannten-kanaelen.mp4",
+    "bild": "assets/video/sidetube/neu-bei-bekannten-kanaelen.jpg",
+    "dauer": 23
+   },
+   {
+    "id": "T17",
+    "titel": "Wünsche entscheiden",
+    "text": "Eltern entscheiden, das Kind sieht die Antwort.",
+    "video": "assets/video/sidetube/wuensche-entscheiden.mp4",
+    "bild": "assets/video/sidetube/wuensche-entscheiden.jpg",
+    "dauer": 32
    }
   ]
  }
