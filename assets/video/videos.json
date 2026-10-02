@@ -1,0 +1,107 @@
+{
+ "sidetube": {
+  "vorschau": {
+   "video": "assets/video/sidetube/vorschau.mp4",
+   "bild": "assets/video/sidetube/vorschau.jpg",
+   "dauer": 86
+  },
+  "funktionen": [
+   {
+    "id": "T1",
+    "titel": "Startseite",
+    "text": "Nur Kanäle und Videos, die Eltern freigegeben haben.",
+    "video": "assets/video/sidetube/startseite.mp4",
+    "bild": "assets/video/sidetube/startseite.jpg",
+    "dauer": 19
+   },
+   {
+    "id": "T2",
+    "titel": "Kanal stöbern, kein Autoplay",
+    "text": "Kein Feed. Keine Kommentare. Kein Autoplay.",
+    "video": "assets/video/sidetube/kanal-stoebern-kein-autoplay.mp4",
+    "bild": "assets/video/sidetube/kanal-stoebern-kein-autoplay.jpg",
+    "dauer": 24
+   },
+   {
+    "id": "T3",
+    "titel": "Suche mit dem Rad",
+    "text": "Die Suche bleibt im Rahmen.",
+    "video": "assets/video/sidetube/suche-mit-dem-rad.mp4",
+    "bild": "assets/video/sidetube/suche-mit-dem-rad.jpg",
+    "dauer": 21
+   },
+   {
+    "id": "T4",
+    "titel": "Prüfen und freigeben",
+    "text": "Eltern prüfen – nachvollziehbar, mit Verlauf.",
+    "video": "assets/video/sidetube/pruefen-und-freigeben.mp4",
+    "bild": "assets/video/sidetube/pruefen-und-freigeben.jpg",
+    "dauer": 25
+   },
+   {
+    "id": "T5",
+    "titel": "Schlafmodus",
+    "text": "Der Schlafmodus beendet den Abend von selbst.",
+    "video": "assets/video/sidetube/schlafmodus.mp4",
+    "bild": "assets/video/sidetube/schlafmodus.jpg",
+    "dauer": 25
+   },
+   {
+    "id": "T6",
+    "titel": "Zuletzt geschaut",
+    "text": "Zuletzt geschaut – schnell wiederfinden.",
+    "video": "assets/video/sidetube/zuletzt-geschaut.mp4",
+    "bild": "assets/video/sidetube/zuletzt-geschaut.jpg",
+    "dauer": 26
+   },
+   {
+    "id": "T7",
+    "titel": "Alle Videos",
+    "text": "Alle Videos – nach Kanälen, Videos und Sendungen.",
+    "video": "assets/video/sidetube/alle-videos.mp4",
+    "bild": "assets/video/sidetube/alle-videos.jpg",
+    "dauer": 25
+   },
+   {
+    "id": "T8",
+    "titel": "Sendungen (Playlists)",
+    "text": "Sendungen – ohne das, was Eltern abgelehnt haben.",
+    "video": "assets/video/sidetube/sendungen-playlists.mp4",
+    "bild": "assets/video/sidetube/sendungen-playlists.jpg",
+    "dauer": 32
+   },
+   {
+    "id": "T9",
+    "titel": "Link hinzufügen mit Vorschau",
+    "text": "Erst die Vorschau, dann in die Prüfliste.",
+    "video": "assets/video/sidetube/link-hinzufuegen-mit-vorschau.mp4",
+    "bild": "assets/video/sidetube/link-hinzufuegen-mit-vorschau.jpg",
+    "dauer": 29
+   },
+   {
+    "id": "T10",
+    "titel": "Tageslimit und Ruhezeit",
+    "text": "Tageslimit und Ruhezeit je Profil.",
+    "video": "assets/video/sidetube/tageslimit-und-ruhezeit.mp4",
+    "bild": "assets/video/sidetube/tageslimit-und-ruhezeit.jpg",
+    "dauer": 32
+   },
+   {
+    "id": "T12",
+    "titel": "Später und Verlauf",
+    "text": "Später entscheiden – mit Verlauf.",
+    "video": "assets/video/sidetube/spaeter-und-verlauf.mp4",
+    "bild": "assets/video/sidetube/spaeter-und-verlauf.jpg",
+    "dauer": 31
+   },
+   {
+    "id": "T13",
+    "titel": "Profilwechsel",
+    "text": "Jedes Kind hat sein eigenes Profil.",
+    "video": "assets/video/sidetube/profilwechsel.mp4",
+    "bild": "assets/video/sidetube/profilwechsel.jpg",
+    "dauer": 21
+   }
+  ]
+ }
+}
