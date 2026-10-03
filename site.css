@@ -1,0 +1,197 @@
+/* Seitenvorlage der öffentlichen Seiten (ADR 0001, docs/adr/0001-einheitliche-website-gestaltung.md).
+   Lädt nach palette.css (Schriften und Farb-Tokens). style.css und sidephone.css gehören zu den
+   älteren, unveröffentlichten Seiten und werden hier nicht gebraucht.
+   Regeln: Gelb nur für Logo und eine Hauptaktion je Bildschirmhöhe; Karten neutral; Häkchen, Punkte
+   und Etiketten in Textfarben; Fließtext 17–18 px, kleinste Texte 14 px; keine Silbentrennung. */
+
+:root {
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, .45), 0 12px 32px rgba(0, 0, 0, .35);
+  --measure: 68ch;
+  --gutter: 40px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--surface-primary); color: var(--text-primary); font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.6; }
+img { max-width: 100%; height: auto; }
+a { color: inherit; }
+p { margin: 0 0 1em; max-width: var(--measure); }
+em { font-family: inherit; }
+
+/* Überschriften: nie trennen, ausgeglichen umbrechen. */
+h1, h2, h3 { margin: 0 0 .5em; font-family: var(--font-body); color: var(--text-primary); hyphens: manual; -webkit-hyphens: manual; overflow-wrap: break-word; text-wrap: balance; }
+h1 { font-size: clamp(2.25rem, 4.6vw, 3.75rem); font-weight: 650; line-height: 1.08; letter-spacing: -.03em; }
+h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 650; line-height: 1.15; letter-spacing: -.02em; }
+h3 { font-size: 1.25rem; font-weight: 650; line-height: 1.3; letter-spacing: -.01em; }
+/* Kursive Fraunces-Zweitzeile nur im Seitenkopf. */
+.page-head h1 em, .page-sub { display: block; font-family: var(--font-display); font-style: italic; font-weight: 500; letter-spacing: -.02em; }
+.page-sub { margin: .25em 0 0; font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.2; color: var(--text-secondary); text-wrap: balance; }
+
+.label { margin: 0 0 .75rem; color: var(--text-muted); font-size: .875rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.lead { font-size: 1.1875rem; color: var(--text-secondary); max-width: 36em; }
+
+/* Rahmen */
+.site-shell { max-width: 1200px; margin: 0 auto; padding: 0 var(--gutter); }
+
+/* Kopfzeile */
+.site-header { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px; padding: 18px 0; border-bottom: 1px solid var(--border-subtle); }
+.brand { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--text-primary); font-size: 1.125rem; font-weight: 700; letter-spacing: -.03em; text-decoration: none; }
+.brand-mark { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50% 50% 50% 15%; background: var(--brand-primary); color: var(--on-brand); font-size: 1rem; transform: rotate(-12deg); }
+.main-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px; margin-left: auto; }
+.main-nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--text-secondary); font-size: 1rem; font-weight: 600; text-decoration: none; }
+.main-nav a:hover, .main-nav a[aria-current="page"] { color: var(--text-primary); text-decoration: underline; text-underline-offset: .3em; text-decoration-thickness: 2px; }
+.main-nav .lang { padding: 0 14px; border: 1px solid var(--border-default); border-radius: 999px; color: var(--text-primary); font-size: .9375rem; }
+.main-nav .lang:hover { border-color: var(--text-secondary); text-decoration: none; }
+
+/* Seitenkopf: Etikett, Titel, kursive Zweitzeile, Hauptaktion; optional Gerätebild */
+.page-head { padding: 64px 0 72px; }
+.page-head-media { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 56px; align-items: center; }
+.page-head .lead { margin-top: 1.25rem; }
+.status-line { margin: 0 0 1.25rem; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin: 1.75rem 0 0; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 12px 22px; border: 1px solid transparent; border-radius: 10px; font-size: 1rem; font-weight: 700; text-decoration: none; transition: background-color .15s, border-color .15s; }
+.button-primary { background: var(--interactive-primary); color: var(--on-brand); }
+.button-primary:hover { background: var(--interactive-hover); color: var(--on-brand); }
+.button-secondary { border-color: var(--border-default); background: transparent; color: var(--text-primary); }
+.button-secondary:hover { border-color: var(--text-secondary); }
+.text-link { color: var(--text-primary); font-size: 1rem; font-weight: 600; text-decoration: underline; text-underline-offset: .25em; }
+.text-link:hover { color: var(--text-primary); text-decoration-thickness: 2px; }
+.signals { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 2rem 0 0; padding: 0; list-style: none; color: var(--text-secondary); font-size: .9375rem; font-weight: 600; }
+.signals li::before, .checks li::before { content: "✓"; margin-right: .5em; color: var(--text-secondary); font-weight: 800; }
+.concept-link { margin: 1.5rem 0 0; font-size: .9375rem; color: var(--text-muted); }
+.concept-link a { color: var(--text-secondary); }
+
+/* Gerätebild: echte Bildschirme aus den Videoaufnahmen */
+.device { margin: 0; justify-self: center; width: 100%; max-width: 440px; }
+.device img { display: block; width: 100%; height: auto; }
+.device figcaption { margin-top: 12px; color: var(--text-muted); font-size: .875rem; text-align: center; }
+
+/* Abschnitte */
+.section { padding: 80px 0; border-top: 1px solid var(--border-subtle); }
+.section > h2 { max-width: 24em; }
+.section-intro { max-width: var(--measure); color: var(--text-secondary); }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 48px; max-width: 1040px; margin-top: 1.5rem; }
+.columns p { color: var(--text-secondary); }
+.columns strong { color: var(--text-primary); }
+.split { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 56px; align-items: start; }
+.split > div > p { color: var(--text-secondary); }
+
+/* Karten: neutral, feiner Rand, weicher Schatten */
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 2.5rem; }
+.card { display: flex; flex-direction: column; padding: 28px; border: 1px solid var(--border-default); border-radius: 16px; background: var(--surface-secondary); box-shadow: var(--shadow-soft); }
+.card h3 { margin-bottom: .6em; }
+.card p { color: var(--text-secondary); }
+.card .text-link { margin-top: auto; padding-top: .5rem; }
+.card-number { margin: 0 0 1rem; color: var(--text-muted); font-size: .875rem; font-weight: 700; letter-spacing: .1em; }
+.checks { margin: .75rem 0 0; padding: 0; list-style: none; color: var(--text-secondary); }
+.checks li { margin: .5rem 0; padding-left: 1.5em; text-indent: -1.5em; }
+.checks li::before { display: inline-block; width: 1em; margin-right: .5em; text-indent: 0; }
+
+/* Ein Statussystem: In Entwicklung · Im Familientest · Verfügbar (Form statt Farbe) */
+.status { display: inline-flex; align-items: center; gap: .5em; padding: 3px 12px; border: 1px solid var(--border-default); border-radius: 999px; background: var(--surface-primary); color: var(--text-primary); font-size: .875rem; font-weight: 600; line-height: 1.5; white-space: nowrap; }
+.status::before { content: ""; flex: none; width: 10px; height: 10px; border: 2px solid var(--text-secondary); border-radius: 50%; }
+.status.is-test::before { background: linear-gradient(90deg, var(--text-secondary) 50%, transparent 50%); }
+.status.is-live::before { background: var(--text-secondary); }
+
+/* Bezugswege und Quellen */
+.offer-list { display: grid; gap: 12px; }
+.offer { display: flex; align-items: center; gap: 16px; padding: 16px 20px; border: 1px solid var(--border-default); border-radius: 14px; background: var(--surface-secondary); box-shadow: var(--shadow-soft); color: var(--text-primary); text-decoration: none; }
+.offer h3 { margin: 0; font-size: 1.0625rem; }
+.offer p { margin: 2px 0 0; color: var(--text-secondary); font-size: .9375rem; }
+.offer > :last-child:not(div) { margin-left: auto; }
+a.offer:hover { border-color: var(--text-secondary); }
+.offer-arrow { color: var(--text-secondary); font-size: 1.25rem; }
+.offer-groups { display: grid; gap: 28px; }
+.offer-group-title { margin: 0 0 12px; font-size: 1.125rem; }
+/* Startseite „Ausprobieren“: eine Karte je App (Name, Status, ein Satz, ggf. Quellcode) */
+.offer-app { display: block; }
+.offer-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.offer-head h3 { font-size: 1.25rem; }
+.offer-app p { margin-top: 8px; }
+.offer-app .text-link { display: inline-flex; align-items: center; gap: .35em; min-height: 44px; margin-top: 4px; }
+.offer-contact { margin: 20px 0 0; color: var(--text-secondary); font-size: 1rem; }
+.offer-contact a { color: var(--text-primary); font-weight: 600; text-underline-offset: .25em; }
+
+/* Startseite: beide Apps mit gleichem Aufbau */
+.app-story { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 56px; align-items: center; margin-top: 56px; }
+.app-story + .app-story { padding-top: 56px; border-top: 1px solid var(--border-subtle); }
+.app-story h3 { margin-bottom: .4em; font-size: clamp(1.75rem, 3vw, 2.25rem); letter-spacing: -.02em; }
+.app-story .lead { margin-top: .75rem; }
+
+/* Technische Details */
+.tech summary { display: flex; align-items: center; min-height: 44px; color: var(--text-primary); font-weight: 700; cursor: pointer; }
+.tech-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: 20px; }
+.tech-grid p { color: var(--text-secondary); font-size: .9375rem; }
+.tech-grid strong { color: var(--text-primary); }
+.note { margin: 0 0 40px; color: var(--text-muted); font-size: .875rem; line-height: 1.5; max-width: 80ch; }
+
+/* Unterseiten (about/*): gleicher Kopf, Abschnitte als neutrale Karten */
+.doc .page-head { padding-bottom: 48px; }
+.doc-body { display: grid; gap: 20px; max-width: 820px; padding-bottom: 72px; }
+.doc-body > section { min-width: 0; padding: 28px 32px; border: 1px solid var(--border-default); border-radius: 16px; background: var(--surface-secondary); box-shadow: var(--shadow-soft); }
+.doc-body > section > :last-child { margin-bottom: 0; }
+.doc-body h2 { font-size: clamp(1.4rem, 2.4vw, 1.75rem); margin-top: 0; }
+.doc-body h3 { margin-top: 1.5em; font-size: 1.125rem; }
+.doc-body h2 + h3 { margin-top: .75em; }
+.doc-body p, .doc-body li { color: var(--text-secondary); }
+.doc-body strong { color: var(--text-primary); }
+.doc-body ul, .doc-body ol { padding-left: 1.3em; }
+.doc-body li { margin: .45em 0; max-width: var(--measure); }
+.doc-body blockquote { margin: 1.25em 0; padding: 18px 22px; border: 1px solid var(--border-default); border-left: 3px solid var(--text-muted); border-radius: 0 12px 12px 0; background: var(--surface-elevated); color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; line-height: 1.5; }
+.doc-body table { display: block; max-width: 100%; overflow-x: auto; margin: 1.25em 0 !important; border-collapse: collapse; font-size: .9375rem; }
+.doc-body th, .doc-body td { padding: .6rem .75rem; border: 1px solid var(--border-default); vertical-align: top; }
+.doc-body tr { background: transparent !important; }
+.doc-body pre, .doc-body code { font-size: .9375rem; }
+.doc-body pre { max-width: 100%; overflow-x: auto; white-space: pre-wrap; }
+
+/* Fußzeile */
+.site-footer { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 32px 48px; padding: 48px 0 40px; border-top: 1px solid var(--border-subtle); color: var(--text-muted); font-size: .9375rem; }
+.site-footer p { margin: 12px 0 0; }
+.footer-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.footer-title { margin: 0 0 6px !important; color: var(--text-muted); font-size: .875rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.footer-nav ul { margin: 0; padding: 0; list-style: none; }
+.footer-nav a { display: inline-flex; align-items: center; min-height: 36px; color: var(--text-secondary); text-decoration: none; }
+.footer-nav a:hover { color: var(--text-primary); text-decoration: underline; text-underline-offset: .25em; }
+.footer-person { max-width: 34em; color: var(--text-muted); font-size: .9375rem; line-height: 1.55; }
+.footer-person a { color: var(--text-secondary); text-underline-offset: .2em; }
+.footer-person a:hover { color: var(--text-primary); }
+.footer-meta { grid-column: 1 / -1; max-width: none; margin: 8px 0 0 !important; padding-top: 20px; border-top: 1px solid var(--border-subtle); }
+.footer-meta a { color: var(--text-secondary); }
+
+@media (min-width: 900px) {
+  body { font-size: 1.125rem; }
+}
+@media (max-width: 900px) {
+  :root { --gutter: 24px; }
+  .page-head-media, .split, .app-story { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .page-head-media .device { max-width: 380px; }
+  .app-story .device { max-width: 340px; }
+  .cards { grid-template-columns: minmax(0, 1fr); }
+  .columns { grid-template-columns: minmax(0, 1fr); }
+  .tech-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .site-footer { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+  :root { --gutter: 20px; }
+  .site-header { padding: 10px 0 4px; }
+  .main-nav { order: 3; width: 100%; margin-left: 0; justify-content: space-between; gap: 0 12px; }
+  .page-head { padding: 40px 0 48px; }
+  .section { padding: 56px 0; }
+  .actions .button { flex: 1 1 100%; }
+  .card, .doc-body > section { padding: 22px 20px; }
+  .offer { flex-wrap: wrap; gap: 8px 16px; padding: 14px 16px; }
+  .tech-grid { grid-template-columns: minmax(0, 1fr); }
+  .footer-nav { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .button { transition: none; }
+}
+@media (forced-colors: active) {
+  .button-primary, .status, .card, .offer { border: 1px solid ButtonText; }
+  .status::before { border-color: CanvasText; }
+}
+
+/* Bindestrich-Wörter in Überschriften zusammenhalten (kein Umbruch am Bindestrich). */
+.nobr { white-space: nowrap; }

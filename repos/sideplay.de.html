@@ -6,63 +6,130 @@
   <meta name="description" content="SidePlay ist ein ruhiger Audio-Player für Kinder: Hörspiele, Musik und Podcasts aus der eigenen Sammlung, offline und ohne Empfehlungen.">
   <meta name="theme-color" content="#090A0C">
   <title>SidePlay — Hörspiele und Musik für Kinder</title>
-  <link rel="stylesheet" href="../style.css?v=2026093004">
-  <link rel="stylesheet" href="../palette.css?v=2026093004">
+  <link rel="stylesheet" href="../palette.css?v=2026100310">
+  <link rel="stylesheet" href="../site.css?v=2026100311">
+  <link rel="stylesheet" href="../assets/video/video.css?v=2026100308">
+  <script src="../assets/video/videos.js?v=2026100308" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#content">Zum Inhalt springen</a>
-  <main id="content" class="product-page">
-    <div class="breadcrumb"><a href="../index.html">SideKids</a><span aria-hidden="true"> / </span> SidePlay <span aria-hidden="true">·</span> <a class="language-switcher" href="sideplay.html" lang="en" hreflang="en">English</a></div>
-
-    <header class="product-hero">
-      <div class="product-hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> SidePlay · iOS &amp; Android</p>
-        <h1>Hörspiele, Musik, Podcasts.<br><em>Aus der eigenen Sammlung.</em></h1>
-        <p class="product-lead">SidePlay ist ein ruhiger Audio-Player für Kinder. Er spielt, was die Familie selbst besitzt oder abonniert hat – auch im Flugmodus. Keine Empfehlungen, keine Autoplay-Ketten, keine Engagement-Mechaniken.</p>
-        <div class="product-actions"><a class="button button-primary" href="#quellen">Woher die Inhalte kommen <span aria-hidden="true">↓</span></a><a class="text-link" href="#prinzip">Wie es funktioniert <span aria-hidden="true">→</span></a></div>
-        <ul class="product-signals" aria-label="Wichtige Eigenschaften"><li>Offline</li><li>Keine Empfehlungen</li><li>Kein Tracking</li></ul>
-      </div>
-      <div class="product-visual source-visual" aria-label="Quellen von SidePlay">
-        <p class="section-kicker">Quellen</p>
-        <div class="availability-list">
-          <div class="availability-card"><span class="platform-badge" aria-hidden="true">▣</span><div><h3>Plex</h3><p>Eigener Medienserver im Heimnetz</p></div><span class="availability-state">Verfügbar</span></div>
-          <div class="availability-card source-planned"><span class="platform-badge" aria-hidden="true">☁</span><div><h3>Nextcloud Musik</h3><p>Alternative zu Plex, ohne Plex-Konto</p></div><span class="availability-state">Geplant</span></div>
-          <div class="availability-card"><span class="platform-badge" aria-hidden="true">◉</span><div><h3>Podcasts</h3><p>Abos per RSS, auch Kindersendungen öffentlich-rechtlicher Sender</p></div><span class="availability-state">Verfügbar</span></div>
-          <div class="availability-card"><span class="platform-badge" aria-hidden="true">♪</span><div><h3>Apple Music</h3><p>Auf iOS, mit eigenem Abo</p></div><span class="availability-state">Verfügbar</span></div>
-        </div>
-      </div>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="SideKids – Startseite"><span class="brand-mark" aria-hidden="true">✦</span><span>SideKids</span></a>
+      <nav class="main-nav" aria-label="Hauptnavigation"><a href="../index.html#apps">Apps</a><a href="../about/philosophy.de.html">Haltung</a><a href="../about/privacy.de.html">Datenschutz</a><a class="lang" href="sideplay.html" lang="en" hreflang="en">English</a></nav>
     </header>
 
-    <section class="product-section product-intro" id="prinzip" aria-labelledby="principle-title">
-      <div class="section-kicker">Das Prinzip</div>
-      <h2 id="principle-title">Offline zuerst.<br><em>Kein Abo nötig.</em></h2>
-      <div class="intro-columns"><p>Hörspiele und Lieblingsmusik sollten kein Streaming-Abo, kein kommerzielles Konto und keine Dauerverbindung brauchen. SidePlay spielt die Sammlung der Familie und lädt sie aufs Gerät; danach läuft alles ohne Netz.</p><p>Weiterhören geht mit einem Tipp, Hörspiele stehen nach Reihen sortiert, die Suche findet nur, was im eigenen Bestand freigegeben ist. Wenn eine Geschichte zu Ende ist, ist sie zu Ende.</p></div>
-    </section>
+    <main id="content">
+      <header class="page-head page-head-media">
+        <div>
+          <p class="label">SidePlay · iOS &amp; Android</p>
+          <p class="status-line"><span class="status is-test">Im Familientest</span></p>
+          <h1>Hörspiele, Musik, Podcasts. <em>Aus der eigenen Sammlung.</em></h1>
+          <p class="lead">SidePlay ist ein ruhiger Audio-Player für Kinder. Er spielt, was die Familie selbst besitzt oder abonniert hat – auch im Flugmodus. Keine Empfehlungen, keine Autoplay-Ketten, keine Engagement-Mechaniken.</p>
+          <div class="actions"><a class="button button-primary" href="#videos">Im Video ansehen <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="#downloads">Verfügbarkeit</a></div>
+          <ul class="signals" aria-label="Wichtige Eigenschaften"><li>Offline</li><li>Keine Empfehlungen</li><li>Kein Tracking</li></ul>
+          <p class="concept-link"><a href="#quellen">Woher die Inhalte kommen</a></p>
+        </div>
+        <figure class="device"><picture><source type="image/webp" srcset="../assets/geraete/sideplay-klein.webp 420w, ../assets/geraete/sideplay.webp 826w" sizes="(max-width: 900px) 90vw, 440px"><img src="../assets/geraete/sideplay.jpg" srcset="../assets/geraete/sideplay-klein.jpg 420w, ../assets/geraete/sideplay.jpg 826w" sizes="(max-width: 900px) 90vw, 440px" width="826" height="840" alt="SidePlay auf iPhone und SidePhone: Läuft gerade, Märchen der Brüder Grimm" loading="eager"></picture><figcaption>Echte Bildschirme: iPhone links, SidePhone rechts</figcaption></figure>
+      </header>
 
-    <section class="product-section product-intro" id="quellen" aria-labelledby="sources-title">
-      <div class="section-kicker">Eigener Server</div>
-      <h2 id="sources-title">Plex heute.<br><em>Nextcloud als Alternative.</em></h2>
-      <div class="intro-columns"><p>Heute greift SidePlay über <strong>Plex</strong> auf die Mediensammlung der Familie zu: Hörspiele, Musik und Hörbücher liegen auf einem eigenen Server im Heimnetz, SidePlay holt sie von dort und legt sie für unterwegs aufs Gerät.</p><p>Als Alternative ist <strong>Nextcloud</strong> geplant: Musik aus der Nextcloud-App „Music“ über deren Subsonic-Schnittstelle, mit einem eigenen, nur lesenden Zugang pro Gerät. Wer Nextcloud ohnehin für Fotos und Dateien nutzt, braucht dann keinen zweiten Medienserver. Diese Quelle ist noch nicht verfügbar.</p></div>
-    </section>
-
-    <section class="product-section" aria-labelledby="features-title">
-      <div class="section-kicker">Für den Alltag</div><h2 id="features-title">Einfach für Kinder.<br><em>Überschaubar für Eltern.</em></h2>
-      <div class="feature-grid">
-        <article class="feature-block"><span class="feature-symbol" aria-hidden="true">⌂</span><h3>Für Kinder</h3><p>Große Kacheln, wenige Wege und eine Startseite, die mit dem weitermacht, was zuletzt lief.</p><ul><li>Weiterhören mit einem Tipp</li><li>Lieblinge und eigene Listen</li><li>Hörspiele nach Reihen</li><li>Schlummer-Timer mit Ausblenden</li></ul></article>
-        <article class="feature-block"><span class="feature-symbol" aria-hidden="true">◇</span><h3>Für Eltern</h3><p>Einstellungen liegen hinter einer Elternsperre und lassen sich dem Kind erklären.</p><ul><li>Elternsperre mit PIN</li><li>Mediatheken ein- und ausblenden</li><li>Mindestalter je Werk</li><li>Downloads nur im WLAN</li></ul></article>
-        <article class="feature-block"><span class="feature-symbol" aria-hidden="true">◌</span><h3>Für Familien</h3><p>SidePlay spielt ab, was schon da ist, und schickt nichts nach außen.</p><ul><li>Daten bleiben auf dem Gerät</li><li>Kein Konto bei SideKids</li><li>Eigener Server statt Plattform</li><li>Keine Empfehlungen, kein Tracking</li></ul></article>
+    <!-- videos:start -->
+    <section class="section video-section" id="videos" aria-labelledby="videos-title">
+      <p class="label">In Bewegung</p>
+      <h2 id="videos-title">So sieht SidePlay aus – auf dem iPhone und dem SidePhone.</h2>
+      <p class="video-intro">Dieselbe Funktion gleichzeitig: links das iPhone, rechts das SidePhone SP-01. Gezeigt werden nur frei lizenzierte oder gemeinfreie Inhalte. Die Videos laden erst, wenn sie gestartet werden, und kommen direkt von dieser Seite – ohne YouTube, ohne Tracking.</p>
+      <figure class="video-preview">
+        <video controls preload="none" playsinline width="1280" height="720" poster="../assets/video/sideplay/vorschau.jpg?v=2026100308">
+          <source src="../assets/video/sideplay/vorschau.mp4?v=2026100308" type="video/mp4">
+          <a href="../assets/video/sideplay/vorschau.mp4">Video herunterladen</a>
+        </video>
+        <figcaption>Überblick · 1:29 · mit Musik</figcaption>
+      </figure>
+      <div class="video-group" role="group" aria-labelledby="videos-kinder">
+        <h3 class="video-group-title" id="videos-kinder">Für Kinder</h3>
+        <p class="video-group-text">Was Kinder sehen und bedienen.</p>
+        <ul class="video-grid">
+          <li><a class="video-card" href="../assets/video/sideplay/grosse-kacheln.mp4?v=2026100308" data-video data-title="Große Kacheln"><img src="../assets/video/sideplay/grosse-kacheln.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Große Kacheln</span><span class="video-card-text">Startseite mit Sendungen als großen Bildern, Bereiche unten.</span><span class="video-card-meta">0:18</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/weiterhoeren.mp4?v=2026100308" data-video data-title="Weiterhören"><img src="../assets/video/sideplay/weiterhoeren.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Weiterhören</span><span class="video-card-text">Die zuletzt gehörte Folge läuft nach einem Tipp an der alten Stelle weiter.</span><span class="video-card-meta">0:22</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/offline-hoeren.mp4?v=2026100308" data-video data-title="Offline hören"><img src="../assets/video/sideplay/offline-hoeren.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Offline hören</span><span class="video-card-text">Eine Folge laden, das Netz abschalten – sie spielt trotzdem.</span><span class="video-card-meta">0:36</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/schlummer-timer.mp4?v=2026100308" data-video data-title="Schlummer-Timer"><img src="../assets/video/sideplay/schlummer-timer.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Schlummer-Timer</span><span class="video-card-text">Nach der gewählten Zeit blendet die Wiedergabe sanft aus.</span><span class="video-card-meta">0:19</span></span></a></li>
+        </ul>
+        <details class="video-more" open><summary>Alle zeigen <span class="video-more-count">(7 weitere)</span></summary>
+        <ul class="video-grid">
+          <li><a class="video-card" href="../assets/video/sideplay/musik-aus-der-nextcloud.mp4?v=2026100308" data-video data-title="Musik aus der Nextcloud"><img src="../assets/video/sideplay/musik-aus-der-nextcloud.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Musik aus der Nextcloud</span><span class="video-card-text">Ein Album vom Familienserver auswählen und abspielen.</span><span class="video-card-meta">0:24</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/hoerbuecher.mp4?v=2026100308" data-video data-title="Hörbücher"><img src="../assets/video/sideplay/hoerbuecher.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Hörbücher</span><span class="video-card-text">Hörbücher stehen getrennt von der Musik und starten vom Anfang des Buchs.</span><span class="video-card-meta">0:22</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/lieblinge.mp4?v=2026100308" data-video data-title="Lieblinge"><img src="../assets/video/sideplay/lieblinge.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Lieblinge</span><span class="video-card-text">Ein Hörspiel markieren; es erscheint in einer eigenen Reihe auf der Startseite.</span><span class="video-card-meta">0:21</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/eigene-listen.mp4?v=2026100308" data-video data-title="Eigene Listen"><img src="../assets/video/sideplay/eigene-listen.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Eigene Listen</span><span class="video-card-text">Eine Liste anlegen und Titel für den Abend hinzufügen.</span><span class="video-card-meta">0:37</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/hoerspiele-nach-reihen.mp4?v=2026100308" data-video data-title="Hörspiele nach Reihen"><img src="../assets/video/sideplay/hoerspiele-nach-reihen.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Hörspiele nach Reihen</span><span class="video-card-text">Folgen einer Reihe in Reihenfolge, die nächste ist markiert.</span><span class="video-card-meta">0:27</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/downloads.mp4?v=2026100308" data-video data-title="Downloads"><img src="../assets/video/sideplay/downloads.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Downloads</span><span class="video-card-text">Geladene Werke an einem Ort, mit belegtem Speicher.</span><span class="video-card-meta">0:23</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/suche.mp4?v=2026100308" data-video data-title="Suche"><img src="../assets/video/sideplay/suche.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Suche</span><span class="video-card-text">Treffer nur aus der eigenen Sammlung, am SidePhone mit dem Rad.</span><span class="video-card-meta">0:29</span></span></a></li>
+        </ul>
+        </details>
       </div>
+      <div class="video-group" role="group" aria-labelledby="videos-eltern">
+        <h3 class="video-group-title" id="videos-eltern">Für Eltern</h3>
+        <p class="video-group-text">Was Eltern einstellen und entscheiden.</p>
+        <ul class="video-grid">
+          <li><a class="video-card" href="../assets/video/sideplay/elternsperre-und-podcasts.mp4?v=2026100308" data-video data-title="Elternsperre und Podcasts"><img src="../assets/video/sideplay/elternsperre-und-podcasts.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Elternsperre und Podcasts</span><span class="video-card-text">Hinter PIN oder Muster: einen Podcast suchen und abonnieren.</span><span class="video-card-meta">0:21</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/mindestalter-je-werk.mp4?v=2026100308" data-video data-title="Mindestalter je Werk"><img src="../assets/video/sideplay/mindestalter-je-werk.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Mindestalter je Werk</span><span class="video-card-text">Ein Mindestalter setzen; das Werk verschwindet aus dem Kinderprofil.</span><span class="video-card-meta">0:38</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/nachtruhe.mp4?v=2026100308" data-video data-title="Nachtruhe"><img src="../assets/video/sideplay/nachtruhe.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Nachtruhe</span><span class="video-card-text">Ab einer Uhrzeit wird die Lautstärke begrenzt.</span><span class="video-card-meta">0:29</span></span></a></li>
+          <li><a class="video-card" href="../assets/video/sideplay/mediatheken.mp4?v=2026100308" data-video data-title="Mediatheken"><img src="../assets/video/sideplay/mediatheken.jpg?v=2026100308" alt="" loading="lazy" width="560" height="569"><span class="video-card-body"><span class="video-card-title">Mediatheken</span><span class="video-card-text">Mediatheken des Servers zuordnen oder für Kinder ausblenden.</span><span class="video-card-meta">0:25</span></span></a></li>
+        </ul>
+      </div>
+      <dialog class="video-dialog" aria-label="Video"><form method="dialog"><button class="video-dialog-close" aria-label="Schließen">×</button></form><video controls playsinline></video><p class="video-dialog-title"></p></dialog>
     </section>
+    <!-- videos:end -->
 
-    <section class="product-section availability-section" id="downloads" aria-labelledby="availability-title">
-      <div><div class="section-kicker">Stand</div><h2 id="availability-title">Im Familientest.<br><em>Bald für mehr Familien.</em></h2><p>SidePlay läuft täglich auf den Geräten der Familie, die ihn entwickelt. Store-Links, Quellcode und Datenschutzerklärung erscheinen hier, sobald die Veröffentlichung vorbereitet ist.</p></div>
-      <div class="availability-list"><div class="availability-card"><span class="platform-badge" aria-hidden="true">●</span><div><h3>iPhone</h3><p>Familientest, Veröffentlichung in Vorbereitung</p></div><span class="availability-state">Demnächst</span></div><div class="availability-card"><span class="platform-badge" aria-hidden="true">◆</span><div><h3>Android / SidePhone</h3><p>Im täglichen Einsatz auf dem SidePhone</p></div><span class="availability-state">Familientest</span></div><div class="availability-card"><span class="platform-badge" aria-hidden="true">{ }</span><div><h3>Quellcode</h3><p>Wird mit der ersten Version veröffentlicht</p></div><span class="availability-state">Später</span></div></div>
-    </section>
+      <section class="section" id="prinzip" aria-labelledby="principle-title">
+        <p class="label">Das Prinzip</p>
+        <h2 id="principle-title">Offline zuerst. Kein Abo nötig.</h2>
+        <div class="columns"><p>Hörspiele und Lieblingsmusik sollten kein Streaming-Abo, kein kommerzielles Konto und keine Dauerverbindung brauchen. SidePlay spielt die Sammlung der Familie und lädt sie aufs Gerät; danach läuft alles ohne Netz.</p><p>Weiterhören geht mit einem Tipp, Hörspiele stehen nach Reihen sortiert, die Suche findet nur, was im eigenen Bestand freigegeben ist. Wenn eine Geschichte zu Ende ist, ist sie zu Ende.</p></div>
+      </section>
 
-    <section class="product-section technical-section" aria-labelledby="technical-title"><details><summary id="technical-title">Technische Details</summary><div class="technical-grid"><p><strong>iOS</strong><br>Swift · SwiftUI · iOS 17+</p><p><strong>Android</strong><br>Kotlin · Jetpack Compose · Media3 · Room</p><p><strong>Quellen</strong><br>Plex, Podcast-Feeds, Apple Music (iOS); Nextcloud geplant</p><p><strong>Lizenz</strong><br>GPL-3.0-or-later (vorgesehen)</p></div></details></section>
+      <section class="section split" id="quellen" aria-labelledby="sources-title">
+        <div>
+          <p class="label">Eigener Server</p>
+          <h2 id="sources-title">Plex heute. Nextcloud als Alternative.</h2>
+          <p>Heute greift SidePlay über <strong>Plex</strong> auf die Mediensammlung der Familie zu: Hörspiele, Musik und Hörbücher liegen auf einem eigenen Server im Heimnetz, SidePlay holt sie von dort und legt sie für unterwegs aufs Gerät.</p>
+          <p>Als Alternative ist <strong>Nextcloud</strong> in Arbeit: Musik und Hörbücher aus der Nextcloud-App „Music“ über deren Subsonic-Schnittstelle, mit einem eigenen, nur lesenden Zugang pro Gerät. Wer Nextcloud ohnehin für Fotos und Dateien nutzt, braucht dann keinen zweiten Medienserver. Diese Quelle ist gebaut und in den Videos zu sehen, aber noch nicht in einer veröffentlichten Version.</p>
+        </div>
+        <div class="offer-list" aria-label="Quellen von SidePlay">
+          <div class="offer"><div><h3>Plex</h3><p>Eigener Medienserver im Heimnetz</p></div><span class="status is-live">Verfügbar</span></div>
+          <div class="offer"><div><h3>Nextcloud Musik</h3><p>Alternative zu Plex, ohne Plex-Konto</p></div><span class="status is-dev">In Entwicklung</span></div>
+          <div class="offer"><div><h3>Podcasts</h3><p>Abos per RSS, auch Kindersendungen öffentlich-rechtlicher Sender</p></div><span class="status is-live">Verfügbar</span></div>
+          <div class="offer"><div><h3>Apple Music</h3><p>Auf iOS, mit eigenem Abo</p></div><span class="status is-live">Verfügbar</span></div>
+        </div>
+      </section>
 
-<p class="trademark-note">SidePlay ist ein unabhängiges Projekt und steht in keiner Verbindung zu Plex, Apple oder Nextcloud. Die Namen dienen nur dazu, die unterstützten Dienste zu beschreiben. Podcasts spielt SidePlay aus den öffentlichen Feeds der Anbieter ab; die Rechte an den Inhalten liegen bei ihnen.</p>
-    <footer class="product-footer"><a href="../index.html">← Zurück zu SideKids</a><span>·</span><a href="sideplay.html" lang="en" hreflang="en">English</a></footer>
-  </main>
+      <section class="section" aria-labelledby="features-title">
+        <p class="label">Für den Alltag</p>
+        <h2 id="features-title">Einfach für Kinder. Überschaubar für Eltern.</h2>
+        <div class="cards">
+          <article class="card"><h3>Für Kinder</h3><p>Große Kacheln, wenige Wege und eine Startseite, die mit dem weitermacht, was zuletzt lief.</p><ul class="checks"><li>Weiterhören mit einem Tipp</li><li>Lieblinge und eigene Listen</li><li>Hörspiele nach Reihen</li><li>Schlummer-Timer mit Ausblenden</li></ul></article>
+          <article class="card"><h3>Für Eltern</h3><p>Einstellungen liegen hinter einer Elternsperre und lassen sich dem Kind erklären.</p><ul class="checks"><li>Elternsperre mit PIN</li><li>Mediatheken ein- und ausblenden</li><li>Mindestalter je Werk</li><li>Downloads nur im WLAN</li></ul></article>
+          <article class="card"><h3>Für Familien</h3><p>SidePlay spielt ab, was schon da ist, und schickt nichts nach außen.</p><ul class="checks"><li>Daten bleiben auf dem Gerät</li><li>Kein Konto bei SideKids</li><li>Eigener Server statt Plattform</li><li>Keine Empfehlungen, kein Tracking</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section split" id="downloads" aria-labelledby="availability-title">
+        <div><p class="label">Stand</p><h2 id="availability-title">Im Familientest. Bald für mehr Familien.</h2><p>SidePlay läuft täglich auf den Geräten der Familie, die ihn entwickelt. Store-Links, Quellcode und Datenschutzerklärung erscheinen hier, sobald die Veröffentlichung vorbereitet ist.</p></div>
+        <div class="offer-list">
+          <div class="offer"><div><h3>iPhone</h3><p>Veröffentlichung in Vorbereitung</p></div><span class="status is-test">Im Familientest</span></div>
+          <div class="offer"><div><h3>Android / SidePhone</h3><p>Im täglichen Einsatz auf dem SidePhone</p></div><span class="status is-test">Im Familientest</span></div>
+          <div class="offer"><div><h3>Quellcode</h3><p>Wird mit der ersten Version veröffentlicht</p></div></div>
+        </div>
+      </section>
+
+      <section class="section tech" aria-labelledby="technical-title"><details><summary id="technical-title">Technische Details</summary><div class="tech-grid"><p><strong>iOS</strong><br>Swift · SwiftUI · iOS 17+</p><p><strong>Android</strong><br>Kotlin · Jetpack Compose · Media3 · Room</p><p><strong>Quellen</strong><br>Plex, Podcast-Feeds, Apple Music (iOS); Nextcloud in Entwicklung</p><p><strong>Lizenz</strong><br>GPL-3.0-or-later (vorgesehen)</p></div></details></section>
+
+      <p class="note">SidePlay ist ein unabhängiges Projekt und steht in keiner Verbindung zu Plex, Apple oder Nextcloud. Die Namen dienen nur dazu, die unterstützten Dienste zu beschreiben. Podcasts spielt SidePlay aus den öffentlichen Feeds der Anbieter ab; die Rechte an den Inhalten liegen bei ihnen.</p>
+    </main>
+
+    <footer class="site-footer">
+      <div><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>SideKids</span></a><p>Für Kinder gestaltet. Von Familien gedacht.</p><p class="footer-person">Ein Projekt von <a rel="me author" href="https://christian.steier.xyz/">Christian-Maximilian Steier</a>, Medienpädagoge.<br>Impressum und Datenschutz des Anbieters: <a href="https://christian.steier.xyz/impressum/">christian.steier.xyz/impressum</a></p></div>
+      <nav class="footer-nav" aria-label="Weitere Seiten"><div><p class="footer-title">Apps</p><ul><li><a href="../repos/sidetube.de.html">SideTube</a></li><li><a href="../repos/sideplay.de.html" aria-current="page">SidePlay</a></li></ul></div><div><p class="footer-title">Haltung</p><ul><li><a href="../about/philosophy.de.html">Philosophie</a></li><li><a href="../about/gradual-autonomy.de.html">Schrittweise Selbstständigkeit</a></li><li><a href="../about/less-online.de.html">Less Online</a></li></ul></div><div><p class="footer-title">Vertrauen</p><ul><li><a href="../about/privacy.de.html">Datenschutz</a></li><li><a href="../about/security.de.html">Sicherheit</a></li><li><a href="https://github.com/sidekids" target="_blank" rel="noopener">Quellcode auf GitHub <span aria-hidden="true">↗</span></a></li></ul></div></nav>
+      <p class="footer-meta">Open Source · GPL / CC BY 4.0 · <a href="sideplay.html" lang="en" hreflang="en">English</a></p>
+    </footer>
+  </div>
 </body>
 </html>
