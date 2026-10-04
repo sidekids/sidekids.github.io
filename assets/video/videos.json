@@ -188,7 +188,7 @@
   "vorschau": {
    "video": "assets/video/sideplay/vorschau.mp4",
    "bild": "assets/video/sideplay/vorschau.jpg",
-   "dauer": 89
+   "dauer": 91
   },
   "funktionen": [
    {
@@ -211,7 +211,7 @@
     "text_en": "The last episode continues where it stopped after one tap.",
     "video": "assets/video/sideplay/weiterhoeren.mp4",
     "bild": "assets/video/sideplay/weiterhoeren.jpg",
-    "dauer": 22
+    "dauer": 24
    },
    {
     "id": "P3",
@@ -249,12 +249,12 @@
    {
     "id": "P7",
     "gruppe": "kinder",
-    "titel": "Hörbücher",
-    "text": "Hörbücher stehen getrennt von der Musik und starten vom Anfang des Buchs.",
-    "titel_en": "Audiobooks",
-    "text_en": "Audiobooks sit apart from music and start at the beginning of the book.",
-    "video": "assets/video/sideplay/hoerbuecher.mp4",
-    "bild": "assets/video/sideplay/hoerbuecher.jpg",
+    "titel": "Hörspiele",
+    "text": "Hörspiele und Hörbücher stehen getrennt von der Musik und starten vom Anfang.",
+    "titel_en": "Audio plays",
+    "text_en": "Audio plays and audiobooks sit apart from music and start at the beginning.",
+    "video": "assets/video/sideplay/hoerspiele.mp4",
+    "bild": "assets/video/sideplay/hoerspiele.jpg",
     "dauer": 22
    },
    {
@@ -288,7 +288,7 @@
     "text_en": "Creating a list and adding titles for the evening.",
     "video": "assets/video/sideplay/eigene-listen.mp4",
     "bild": "assets/video/sideplay/eigene-listen.jpg",
-    "dauer": 37
+    "dauer": 48
    },
    {
     "id": "P10",
