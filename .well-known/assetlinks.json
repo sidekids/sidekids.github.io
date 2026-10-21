@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.steier.sidetube",
+      "sha256_cert_fingerprints": [
+        "6D:59:DA:F7:45:32:7A:6F:A1:D8:84:4D:10:6C:98:56:F0:7C:2B:FC:01:89:6A:A8:68:F8:9D:B5:FD:45:42:80"
+      ]
+    }
+  }
+]

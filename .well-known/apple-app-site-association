@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "R26KXFGNN7.xyz.steier.sidetube"
+        ],
+        "components": [
+          {
+            "/": "/add",
+            "?": {
+              "v": "???????????"
+            },
+            "comment": "Empfehlung aus SideTube"
+          }
+        ]
+      }
+    ]
+  }
+}

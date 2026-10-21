@@ -15,132 +15,101 @@
       <nav class="main-nav" aria-label="Main navigation"><a href="../index.en.html#apps">Apps</a><a href="../about/philosophy.html">Principles</a><a href="../about/privacy.html" aria-current="page">Privacy</a><a class="lang" href="privacy.de.html" lang="de" hreflang="de">Deutsch</a></nav>
     </header>
     <main id="content" class="doc">
-      <header class="page-head"><p class="label">Privacy</p><h1>Privacy by Architecture</h1><p class="page-sub">Not only by policy</p></header>
+      <header class="page-head"><p class="label">Privacy</p><h1>Privacy at SideKids</h1><p class="page-sub">A child's data stays where it belongs whenever possible: with the family.</p></header>
       <div class="doc-body">
 
     <section>
-      <p>SideKids is built on a simple principle: <strong>whatever can be stored and processed on the child's device or the family's own server, is.</strong> No SideKids app sends data to third parties to provide its core function.</p>
+      <p>SideKids apps store settings and data directly on the child's device. There is no SideKids server and no SideKids account.</p>
+      <p>Some features still need a connection to other services. SideTube, for example, asks YouTube for videos and thumbnails. YouTube receives technical information in the process, such as the device's IP address. This page explains when such connections happen and which data is transferred.</p>
     </section>
 
     <section>
-      <h2>Core Privacy Principles</h2>
-
-      <h3>1. Local first</h3>
-      <p>Whatever can be stored and processed on the child's device or the family's own server, is. No SideKids app sends data to third parties to provide its core function.</p>
-
-      <h3>2. Accounts stay server-side</h3>
-      <p>Credentials for external services (e.g. a cloud photo library) exist only on the family server. The child's device never holds account secrets.</p>
-
-      <h3>3. The private network is the default boundary</h3>
-      <p>Family services (photo server, screen-time server, media library) are reachable only inside the family's private network (VPN/mesh). Nothing is exposed to the public internet unless a function explicitly requires it.</p>
-
-      <h3>4. No telemetry</h3>
-      <p>SideKids apps contain no analytics, no crash reporters that phone home, no advertising SDKs.</p>
-
-      <h3>5. Data minimization for children specifically</h3>
-      <p>Location clustering happens without external geocoding services; face recognition is either fully switchable-off or not built at all; social features default to private.</p>
-    </section>
-
-    <section>
-      <h2>Data Inventory</h2>
-
-      <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin: 1.5rem 0; border-collapse: collapse;">
-        <tr style="background: #f5f5f5;">
-          <th>Component</th>
-          <th>Local (Device)</th>
-          <th>Family Server</th>
-          <th>External</th>
-        </tr>
-        <tr>
-          <td><strong>SidePlay</strong></td>
-          <td>Media, favorites, resume</td>
-          <td>Media library (self-hosted)</td>
-          <td>None required</td>
-        </tr>
-        <tr>
-          <td><strong>SideTube</strong></td>
-          <td>Watch progress, time budgets</td>
-          <td>None</td>
-          <td>YouTube APIs (optional, parent approval step)</td>
-        </tr>
-        <tr>
-          <td><strong>SideFoto</strong></td>
-          <td>Photos, thumbnails, sync state</td>
-          <td>Originals, previews, shares</td>
-          <td>Optional cloud import (server-to-server only)</td>
-        </tr>
-        <tr>
-          <td><strong>SideLimit</strong></td>
-          <td>Rules, usage counters (enforced locally)</td>
-          <td>Rule sync, family accounts</td>
-          <td>None</td>
-        </tr>
-        <tr>
-          <td><strong>SideHome</strong></td>
-          <td>Launcher settings</td>
-          <td>—</td>
-          <td>Optional weather (opt-in)</td>
-        </tr>
-        <tr>
-          <td><strong>SidePix</strong></td>
-          <td>Drafts, session</td>
-          <td>Posts, comments, accounts</td>
-          <td>Push transport; optional geocoding (opt-in)</td>
-        </tr>
-      </table>
-    </section>
-
-    <section>
-      <h2>Logs</h2>
-      <p>Servers keep operational logs only, on the family server, with no third-party log shipping. Logs contain no message contents.</p>
-    </section>
-
-    <section>
-      <h2>Parent and Child Accounts</h2>
-      <p>Children are first-class users with their own accounts. Parent capabilities are limited, visible to the child, and designed to be reduced over time.</p>
-
-      <p>No SideKids component gives parents access to:</p>
-      <ul>
-        <li>Message contents</li>
-        <li>Browsing history</li>
-        <li>Location trails</li>
-        <li>Screen contents</li>
-      </ul>
-
-      <p>These limits are <strong>architectural</strong>, not merely policy. The capabilities are not built.</p>
-    </section>
-
-    <section>
-      <h2>What SideKids Never Does</h2>
-      <ul>
-        <li>Sell, share or transmit children's data to third parties</li>
-        <li>Profile usage for recommendations or engagement</li>
-        <li>Hide a data flow from the child that the parents can see</li>
-      </ul>
+      <h2>Principles</h2>
+      <h3>1. Data stays on the device whenever possible</h3>
+      <p>Profiles, settings, approvals and watch history are stored directly on the device. They are not sent to a SideKids server.</p>
+      <h3>2. No advertising and no hidden analysis</h3>
+      <p>SideKids apps contain no advertising code, no usage analytics and no crash reporting that sends data out.</p>
+      <h3>3. No SideKids accounts</h3>
+      <p>The apps require no account – not with SideKids, nor with Google or YouTube. For some features, the family can connect its own services, such as a private Nextcloud or Plex server. Their access details stay protected on the device and can be removed in the settings at any time.</p>
+      <h3>4. Children should become more independent</h3>
+      <p>Parents can accompany and limit use. As children grow older they should decide more for themselves – parental features are visible and meant to become fewer over time.</p>
     </section>
 
     <section id="sidetube">
-      <h2>App-specific: SideTube (iOS)</h2>
-      <p>This section is the privacy policy for the SideTube iOS app published by SideKids. Last updated: 31 August 2026.</p>
-      <h3>Data stored on the device only</h3>
+      <h2>SideTube (iOS and Android)</h2>
+      <p>This section is the privacy policy for the SideTube apps for iOS and Android. Last updated: 21 October 2026. Responsible: Christian-Maximilian Steier (SideKids); address and contact: <a href="https://christian.steier.xyz/impressum/">christian.steier.xyz/impressum</a>.</p>
+      <h3>The essentials</h3>
       <ul>
-        <li>Child profiles (name, age band, settings), the parent-approved whitelist and review decisions</li>
-        <li>Watch history per profile (video, duration, time) — used for "Continue watching" and the daily time limit</li>
-        <li>The parent PIN as a cryptographic hash in the device keychain</li>
+        <li>What SideTube stores stays on the device. Nobody at SideKids can see this data.</li>
+        <li>To show and play videos, SideTube asks YouTube. YouTube (Google) receives the device's IP address and learns which videos are requested – but no account and no name of the child.</li>
+        <li>SideTube shows no ads of its own and does not analyse usage. In the YouTube player, YouTube may show ads on some videos.</li>
+        <li>Parents can view and delete all data in the app. When the app is deleted, the data is gone.</li>
+        <li>Beyond that, data only leaves the device when parents trigger it: by recommending a video or with the notification to their own Nextcloud.</li>
       </ul>
-      <p>None of this leaves the device. Deleting the app deletes the data.</p>
-      <h3>Requests to YouTube (Google)</h3>
-      <p>To display and play videos the app contacts YouTube services (oEmbed, RSS feeds, public channel pages, optionally the YouTube Data API, and the embedded YouTube player). Google receives the IP address and the requested video/channel identifiers. No user accounts are used and no identifiers of the child are transmitted. The embedded player is subject to Google's privacy policy. SideTube sets no advertising cookies; a minimal consent cookie is sent only for reading public channel pages within a single request.</p>
-      <h3>Recommendations</h3>
-      <p>If a video is recommended via Messages or Signal, the title and link are handed to that app. SideTube does not see recipients and stores nothing. In child mode this requires the parent PIN.</p>
+      <h3>What is stored on the device</h3>
+      <ul>
+        <li>Children's profiles: name, age band and settings such as daily limit and quiet time</li>
+        <li>What parents approved or rejected, with notes and the history of these decisions</li>
+        <li>Watch history: which video, for how long and when – for "Continue watching", the parents' overview and the daily limit</li>
+        <li>Children's wishes and the parents' replies</li>
+        <li>On iPhone, the last six search terms per child</li>
+        <li>Titles and thumbnails of approved channels and videos, so the app does not have to ask every time</li>
+        <li>Small settings, such as which child was chosen last and whether captions are on</li>
+        <li>The parent PIN: the PIN itself is not stored, only a check value calculated from it. It is kept in a protected area of the operating system (iPhone) or encrypted in the app's storage (Android).</li>
+        <li>If parents set up the notification: address and access details of their own Nextcloud, also stored protected</li>
+      </ul>
+      <h3>How long data is kept</h3>
+      <p>SideTube deletes watch history, search terms and answered wishes after 30 days by itself. Open wishes stay until parents answer them. Parents' decisions stay until the profile is deleted. Deleting a profile deletes its data. Deleting the app deletes everything; on iPhone, SideTube also removes the old PIN on the next installation.</p>
+      <p>The data is not included in backups (iCloud, computer, Android backup) and is not transferred to a new device automatically. After switching devices, SideTube therefore starts fresh.</p>
+      <details class="tech"><summary>Technical details on storage</summary>
+        <p>Cached channel videos are deleted after 30 days. Titles and thumbnails of approved content that are older than 30 days are refreshed or removed step by step once a day; without a network connection they stay until the next update. iOS also keeps thumbnails in the system cache, which the system clears by itself.</p>
+        <p>iOS: database and small settings live in the app's "Application Support" folder, excluded from backups. The PIN check value and the Nextcloud access are in the Keychain, for this device only. Android: database in app storage; PIN check value and Nextcloud access in encrypted preferences (Android Keystore). Backup and device transfer are switched off (<code>allowBackup</code>, <code>dataExtractionRules</code>).</p>
+        <p>The PIN check value is a hash (PBKDF2-HMAC-SHA256, 30,000 rounds, random salt), not encryption: the PIN cannot be calculated back from it, but it can be checked by trying. With four digits, protection therefore rests mainly on the protected storage location and the lockout after five wrong entries.</p>
+      </details>
+      <h3>What YouTube learns</h3>
+      <p>To show videos, SideTube asks YouTube: for the title and image of a video, for the newest videos of an approved channel and for the video itself. YouTube belongs to Google. Google receives the device's IP address, learns which videos and channels are requested and gets technical information about the device and the app. SideTube transmits no account, no name and no other identifier of the child.</p>
+      <p>When a child watches a video, SideTube uses YouTube's privacy-enhanced embed mode. Even so, the video player loads programs and videos from Google, and Google may receive information about the device and playback. Which other data the player processes is up to YouTube. The player's cookies do not stay on the device permanently.</p>
+      <p>When parents open a link to YouTube after entering the PIN, it opens in the browser or, if installed, in the YouTube app; their settings apply there.</p>
+      <p>Google processes this data under its own responsibility: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Watching YouTube content in SideTube is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+      <details class="tech"><summary>Technical details on YouTube</summary>
+        <p>Requests go to oEmbed for video and playlist links and the public RSS feed for channel IDs and newest uploads (<code>www.youtube.com</code>), thumbnails (<code>i.ytimg.com</code>, on Android also <code>yt3.ggpht.com</code> and <code>yt3.googleusercontent.com</code>) and the embedded player via <code>youtube-nocookie.com</code>; its program code comes from <code>www.youtube.com</code>, the videos from Google's servers. Google also receives technical information about the device and browser engine.</p>
+        <p>A channel entered as an @-address or <code>/c/</code>-address is resolved by downloading its public channel page once, with a minimal consent cookie for this single request; the app does not accept cookies YouTube sends back. It reads the channel ID, title, image and, where present, the short description, and keeps nothing else. The parent screen says so when such an address is typed, and the channel link with ID avoids the request.</p>
+        <p>Player cookies: on iOS they live in a temporary store that is discarded. On Android third-party cookies are rejected, and the player's cookies and web storage are erased at the start and end of every playback.</p>
+        <p>The published versions do not use the YouTube Data API; building an iOS release stops if a key for it is configured.</p>
+      </details>
+      <h3>Videos from PeerTube (iPhone only)</h3>
+      <p>On iPhone, SideTube can also play videos from PeerTube, a free, ad-free video platform run by many independent operators. SideTube only uses servers listed in the app that parents have not blocked. As soon as parents add a PeerTube channel or video or load an age suggestion containing such videos, the app asks that server for titles, images and videos. The server's operator receives the IP address, learns which videos are requested and gets technical information about the device; the operator is responsible for this.</p>
+      <details class="tech"><summary>Technical details on PeerTube</summary>
+        <p>Currently listed: <code>tube.bawü.social</code>, <code>framatube.org</code> and <code>tube.tchncs.de</code>. The suggestion for ages 9 to 11 includes videos from <code>tube.bawü.social</code>. Requests go to the public PeerTube interface (<code>/api/v1/…</code>); as with YouTube, the player uses a temporary store.</p>
+      </details>
+      <h3>Notification about new wishes (optional)</h3>
+      <p>Off until parents set it up in the PIN-protected settings. Then, for each new wish, SideTube sends a short message to the family's own Nextcloud – at most three times a day per child, for example "@anna SideTube: new wish (2 open)", in the language of the device. The child's name and what the child wishes for are not included. Nothing goes to SideKids.</p>
+      <details class="tech"><summary>Technical details on the notification</summary>
+        <p>The message is sent encrypted over HTTPS to a conversation in Nextcloud Talk; the app does not accept unencrypted addresses. Setup uses a code pasted in the settings. Stored are the server address, conversation, user names to mention and the Talk bot's key – on iOS in the Keychain, on Android encrypted.</p>
+      </details>
+      <h3>Recommending videos</h3>
+      <p>Parents can recommend a video: on iPhone via Messages or Signal, on Android via Signal or SMS, and on both via „Copy link“. The message contains the title, a link to YouTube and a link that opens the video in SideTube. SideTube does not see who receives it and stores nothing in the process. In the children's area, recommending requires the parent PIN.</p>
+      <p>The SideTube link goes through this website. If SideTube is installed, the app opens directly. Otherwise the browser shows a short explanation page; it is hosted by GitHub, and GitHub receives the IP address and learns which video it is about (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>). A video from such a link only goes to the review list after the parent PIN.</p>
+      <details class="tech"><summary>Technical details on recommendations</summary>
+        <p>On iOS, the text goes to the system message window for Messages and to the clipboard for Signal. Android hands it straight to Signal or the SMS app; if that app is missing, it is put on the clipboard. „Copy link“ puts the whole text on the clipboard on both platforms, marked as sensitive on Android.</p>
+        <p>The link is <code>https://sidekids.github.io/add?v=…</code>. So that the system may assign it to the app, Android downloads a verification file from this website on installation and update, iOS does so via Apple. Android asks for the PIN first when the link is opened. iOS already shows a preview with title and image, fetched from YouTube for this purpose, and the profile names to choose from.</p>
+      </details>
       <h3>Children</h3>
-      <p>SideTube is made for children under parental supervision, including children under 13. It collects no personal data from children and shares none with third parties (COPPA / GDPR Art. 8). SideTube itself shows no ads and contains no analytics and no third-party SDKs; the embedded YouTube player may show YouTube ads on some videos.</p>
-      <h3>Contact</h3>
-      <p>Questions: <a href="https://github.com/sidekids">github.com/sidekids</a>.</p>
-
-      <h3>Datenschutzerklärung SideTube (Deutsch)</h3>
-      <p>Alle Daten (Profile, Whitelist, Prüfentscheidungen, Sehverlauf, PIN-Hash) bleiben ausschließlich auf dem Gerät. Zum Anzeigen und Abspielen werden Anfragen an YouTube (Google) gestellt — dabei erhält Google IP-Adresse und Video-/Kanalkennungen, keine Kennungen des Kindes. Der eingebettete Player unterliegt der Datenschutzerklärung von Google. Empfehlungen per Nachricht oder Signal übergeben nur Titel und Link an die gewählte App. Die App richtet sich auch an Kinder unter 13; es werden keine personenbezogenen Daten von Kindern erhoben oder weitergegeben (COPPA/DSGVO Art. 8). SideTube selbst blendet keine Werbung ein und enthält keine Analyse-Dienste und keine Drittanbieter-SDKs; der eingebettete YouTube-Player kann bei einzelnen Videos Werbung von YouTube zeigen. Kontakt: github.com/sidekids.</p>
+      <p>SideTube is made for children under parental supervision, including children under 13. SideKids collects no personal data from children through SideTube and passes none on. The requests to YouTube and PeerTube described above are technically necessary for playback. SideTube shows no ads of its own and contains no usage analytics, no crash reporting and no additional analytics or advertising code from other providers.</p>
+      <h3>The family's rights</h3>
+      <p>Because the data is on the family's own device, it can be viewed, changed and deleted in the app at any time. For questions and for rights under the GDPR, such as access or erasure, the contact above is available. There is also a right to complain to a data protection supervisory authority. For data processed by Google, GitHub or a PeerTube server, the respective operator is responsible.</p>
+      <p>Deutsche Fassung: <a href="privacy.de.html#sidetube">Datenschutzerklärung SideTube</a>.</p>
     </section>
+
+    <section>
+      <h2>What SideKids does not do</h2>
+      <ul>
+        <li>Sell children's data or use it for advertising</li>
+        <li>Analyse usage to keep children in the app longer</li>
+        <li>Secretly monitor messages, screens or whereabouts</li>
+      </ul>
+    </section>
+
 
     </div>
     </main>
