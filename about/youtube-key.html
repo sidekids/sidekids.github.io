@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Own YouTube key — SideKids</title>
+  <link rel="stylesheet" href="../palette.css?v=2026100310">
+  <link rel="stylesheet" href="../site.css?v=2026100311">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.en.html" aria-label="SideKids – home"><span class="brand-mark" aria-hidden="true">✦</span><span>SideKids</span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="../index.en.html#apps">Apps</a><a href="../about/philosophy.html">Principles</a><a href="../about/privacy.html">Privacy</a><a class="lang" href="youtube-key.de.html" lang="de" hreflang="de">Deutsch</a></nav>
+    </header>
+    <main id="content" class="doc">
+      <header class="page-head"><p class="label">SideTube</p><h1>Setting up the family's YouTube key</h1><p class="page-sub">Optional, free, about ten minutes.</p></header>
+      <div class="doc-body">
+        <section>
+          <h2>Why</h2>
+          <p>With the family's own free YouTube key, SideTube can find channels by @-address and search cleanly through the official YouTube Data API and has a fallback when YouTube does not deliver the public feed. The key is optional; without it SideTube works as before.</p>
+          <p><strong>What changes:</strong> Requests with the key go to Google and can be linked to the Google account that owns the key. The key itself stays on the iPhone in the operating system's protected storage (keychain), is not backed up and is removed when the app is deleted. Details are in the <a href="privacy.html#sidetube">privacy policy</a>.</p>
+        </section>
+        <section>
+          <h2>What is needed</h2>
+          <ul>
+            <li>A Google account of the parents (not a child's account).</li>
+            <li>About ten minutes and, ideally, a computer.</li>
+            <li>SideTube on the iPhone with the parent area unlocked.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Step by step</h2>
+          <p>Google changes labels and layout of its console from time to time; the sequence stays the same in substance.</p>
+          <ol>
+            <li><strong>Open the Google Cloud Console</strong> (<code>console.cloud.google.com</code>) and sign in with the parents' account. Accept any terms it asks for.</li>
+            <li><strong>Create a new project</strong>, for example "SideTube Family".</li>
+            <li><strong>Enable YouTube Data API v3:</strong> "APIs &amp; Services" → "Library" → search "YouTube Data API v3" → "Enable".</li>
+            <li><strong>Create an API key:</strong> "APIs &amp; Services" → "Credentials" → "Create credentials" → "API key". The key appears and can be copied.</li>
+            <li><strong>Restrict the key</strong> (important: without a restriction the console warns that the key can be used with any application). Open the key by its name. There, select the "YouTube Data API v3" under the API restrictions and, below it under application restrictions, choose "iOS apps" and add the bundle ID <code>xyz.steier.sidetube</code>. Finally "Save". Google points out that restricting to an app alone can be bypassed; that is why the restriction to this one API belongs with it, and usage should be checked in the console now and then. According to the console it can take up to 5 minutes for the settings to take effect. The blue notice "Service account required" concerns other Google services (such as Gemini) and does not apply to the YouTube Data API. Labels can differ slightly depending on the console language.</li>
+            <li><strong>Get the key to the iPhone:</strong> for example by message or note to oneself, and copy it there. Delete the message afterwards; the key does not belong in chats or public places.</li>
+            <li><strong>Paste it into SideTube:</strong> menu (⋯) → "YouTube key (optional)" → "Paste key". SideTube checks it with a test request to Google and only saves it once Google accepts it.</li>
+          </ol>
+        </section>
+        <section>
+          <h2>If something does not work</h2>
+          <ul>
+            <li><strong>"That does not look like a YouTube key":</strong> The text is too short or too long or contains spaces and special characters. Copy the key again; it has about 39 characters and usually starts with "AIza".</li>
+            <li><strong>"Google rejects the key":</strong> The key was copied wrongly or has been deleted.</li>
+            <li><strong>"YouTube Data API v3 is not enabled":</strong> Repeat step 3 in the same project the key was created in.</li>
+            <li><strong>"Blocked for this app":</strong> The iOS apps restriction is missing the bundle ID <code>xyz.steier.sidetube</code> or has it spelled wrongly. Wait up to 5 minutes after saving.</li>
+            <li><strong>"Daily quota is used up":</strong> See below; it works again the next day.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Quota</h2>
+          <p>According to Google's documentation (page dated 15 October 2026) the default is 10,000 units per day. A lookup of channels, videos or playlist items costs 1 unit each; search is additionally limited to 100 calls per day. The quota resets at midnight Pacific time. For a family this is usually enough, but there is no guarantee, and Google may change the values.</p>
+        </section>
+        <section>
+          <h2>Removing it</h2>
+          <p>In SideTube, tap "Remove key" under "YouTube key (optional)"; the key is deleted from the device. To switch it off entirely, also delete the key or the project in the Google Cloud Console.</p>
+          <p><strong>Key passed on by accident?</strong> On the key's detail page, "Rotate key" creates a new one; the old one becomes invalid afterwards. Paste the new key into SideTube again.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div><a class="brand" href="../index.en.html"><span class="brand-mark" aria-hidden="true">✦</span><span>SideKids</span></a><p>Designed for children. Thought through with families.</p><p class="footer-person">A project by <a rel="me author" href="https://christian.steier.xyz/">Christian-Maximilian Steier</a>, media educator.<br>Legal notice: <a href="https://christian.steier.xyz/impressum/">christian.steier.xyz/impressum</a> (German)</p></div>
+      <nav class="footer-nav" aria-label="More pages"><div><p class="footer-title">Apps</p><ul><li><a href="../repos/sidetube.html">SideTube</a></li><li><a href="../repos/sideplay.html">SidePlay</a></li></ul></div><div><p class="footer-title">Principles</p><ul><li><a href="../about/philosophy.html">Philosophy</a></li><li><a href="../about/gradual-autonomy.html">Gradual independence</a></li><li><a href="../about/less-online.html">Less online</a></li></ul></div><div><p class="footer-title">Trust</p><ul><li><a href="../about/privacy.html">Privacy</a></li><li><a href="../about/security.html" aria-current="page">Security</a></li><li><a href="https://github.com/sidekids" target="_blank" rel="noopener">Source code on GitHub <span aria-hidden="true">↗</span></a></li></ul></div></nav>
+      <p class="footer-meta">Open source (<a href="https://github.com/sidekids">license per app</a>) · Texts CC BY 4.0 · <a href="youtube-key.de.html" lang="de" hreflang="de">Deutsch</a></p>
+    </footer>
+  </div>
+</body>
+</html>

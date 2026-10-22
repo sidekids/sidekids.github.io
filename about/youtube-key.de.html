@@ -1,0 +1,64 @@
+<!doctype html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#090A0C"><title>Eigener YouTube-Schlüssel — SideKids</title>
+  <link rel="stylesheet" href="../palette.css?v=2026100310">
+  <link rel="stylesheet" href="../site.css?v=2026100311"></head><body><a class="skip-link" href="#content">Zum Inhalt springen</a><div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="SideKids – Startseite"><span class="brand-mark" aria-hidden="true">✦</span><span>SideKids</span></a>
+      <nav class="main-nav" aria-label="Hauptnavigation"><a href="../index.html#apps">Apps</a><a href="../about/philosophy.de.html">Haltung</a><a href="../about/privacy.de.html">Datenschutz</a><a class="lang" href="youtube-key.html" lang="en" hreflang="en">English</a></nav>
+    </header>
+    <main id="content" class="doc">
+      <header class="page-head"><p class="label">SideTube</p><h1>Eigener YouTube-Schlüssel einrichten</h1><p class="page-sub">Optional, kostenlos, etwa zehn Minuten.</p></header>
+      <div class="doc-body">
+        <section>
+          <h2>Wozu</h2>
+          <p>Mit einem eigenen, kostenlosen YouTube-Schlüssel der Familie kann SideTube Kanäle per @-Adresse und Suche sauber über die offizielle YouTube Data API finden und hat eine Reserve, wenn YouTube den öffentlichen Feed einmal nicht liefert. Der Schlüssel ist optional; ohne ihn läuft SideTube wie bisher.</p>
+          <p><strong>Was sich dadurch ändert:</strong> Anfragen mit dem Schlüssel gehen an Google und lassen sich dem Google-Konto zuordnen, dem der Schlüssel gehört. Der Schlüssel selbst bleibt auf dem iPhone im geschützten Speicher des Betriebssystems (Schlüsselbund), wird nicht gesichert und beim Löschen der App entfernt. Näheres steht in der <a href="privacy.de.html#sidetube">Datenschutzerklärung</a>.</p>
+        </section>
+        <section>
+          <h2>Was gebraucht wird</h2>
+          <ul>
+            <li>Ein Google-Konto der Eltern (nicht das Konto eines Kindes).</li>
+            <li>Etwa zehn Minuten und am besten einen Computer.</li>
+            <li>SideTube auf dem iPhone, Elternbereich entsperrt.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Schritt für Schritt</h2>
+          <p>Google ändert Bezeichnungen und Anordnung der Oberfläche gelegentlich; sinngemäß gilt der Ablauf weiter.</p>
+          <ol>
+            <li><strong>Google Cloud Console öffnen</strong> (<code>console.cloud.google.com</code>) und mit dem Konto der Eltern anmelden. Verlangte Nutzungsbedingungen bestätigen.</li>
+            <li><strong>Neues Projekt anlegen</strong>, zum Beispiel „SideTube Familie“.</li>
+            <li><strong>YouTube Data API v3 aktivieren:</strong> „APIs und Dienste“ → „Bibliothek“ → „YouTube Data API v3“ suchen → „Aktivieren“. Unter „Aktivierte APIs und Dienste“ ist sie danach zu sehen.</li>
+            <li><strong>API-Schlüssel erstellen:</strong> „APIs und Dienste“ → „Anmeldedaten“ → „Anmeldedaten erstellen“ → „API-Schlüssel“. Der Schlüssel erscheint und lässt sich kopieren; später ist er über „Schlüssel anzeigen“ wieder abrufbar.</li>
+            <li><strong>Schlüssel einschränken</strong> (wichtig: Ohne Einschränkung zeigt die Console „Dieser Schlüssel kann derzeit mit jeder Anwendung verwendet werden“). Den Schlüssel über seinen Namen öffnen. Dort bei „API-Einschränkungen auswählen“ die „YouTube Data API v3“ wählen und darunter bei „Anwendungseinschränkungen“ die Option „iOS-Apps“ aktivieren, dann die Bundle-ID <code>xyz.steier.sidetube</code> hinzufügen. Zum Schluss „Speichern“. Google weist darauf hin, dass sich die Einschränkung auf eine App allein umgehen lässt; deshalb gehört die Einschränkung auf diese eine API dazu, und die Nutzung ist gelegentlich in der Console zu prüfen. Laut Console kann es bis zu 5 Minuten dauern, bis die Einstellungen wirken. Der blaue Hinweis „Dienstkonto erforderlich“ betrifft andere Google-Dienste (etwa Gemini) und gilt für die YouTube Data API nicht.</li>
+            <li><strong>Schlüssel aufs iPhone bringen:</strong> zum Beispiel per Nachricht oder Notiz an sich selbst und dort kopieren. Danach die Nachricht löschen; der Schlüssel gehört nicht in Chats oder öffentliche Orte.</li>
+            <li><strong>In SideTube einfügen:</strong> Menü (⋯) → „YouTube-Schlüssel (optional)“ → „Schlüssel einfügen“. SideTube prüft ihn mit einem Testaufruf bei Google und speichert ihn erst, wenn Google ihn annimmt.</li>
+          </ol>
+        </section>
+        <section>
+          <h2>Wenn etwas nicht klappt</h2>
+          <ul>
+            <li><strong>„Das sieht nicht wie ein YouTube-Schlüssel aus“:</strong> Der Text ist zu kurz oder zu lang oder enthält Leerzeichen und Sonderzeichen. Schlüssel erneut kopieren; er hat etwa 39 Zeichen und beginnt meist mit „AIza“.</li>
+            <li><strong>„Google lehnt den Schlüssel ab“:</strong> Der Schlüssel ist falsch kopiert oder wurde gelöscht.</li>
+            <li><strong>„YouTube Data API v3 nicht aktiviert“:</strong> Schritt 3 im selben Projekt nachholen, in dem der Schlüssel erstellt wurde.</li>
+            <li><strong>„Für diese App gesperrt“:</strong> In den Anwendungseinschränkungen für iOS-Apps fehlt die Bundle-ID <code>xyz.steier.sidetube</code> oder sie ist falsch geschrieben. Nach dem Speichern bis zu 5 Minuten warten.</li>
+            <li><strong>„Tageskontingent aufgebraucht“:</strong> Siehe unten; am nächsten Tag geht es wieder.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Kontingent</h2>
+          <p>Nach Googles Dokumentation (Stand der Seite: 15. Oktober 2026) stehen standardmäßig 10.000 Einheiten pro Tag zur Verfügung. Ein Abruf von Kanälen, Videos oder Playlist-Einträgen kostet je 1 Einheit; die Suche ist zusätzlich auf 100 Aufrufe pro Tag begrenzt. Das Kontingent wird um Mitternacht pazifischer Zeit zurückgesetzt. Für eine Familie reicht das erfahrungsgemäß, ein Garantieversprechen gibt es nicht, und Google kann die Werte ändern.</p>
+        </section>
+        <section>
+          <h2>Entfernen</h2>
+          <p>In SideTube unter „YouTube-Schlüssel (optional)“ auf „Schlüssel entfernen“ tippen; der Schlüssel wird vom Gerät gelöscht. Wer ihn ganz abschalten will, löscht ihn zusätzlich in der Google Cloud Console oder das Projekt dort.</p>
+          <p><strong>Schlüssel versehentlich weitergegeben?</strong> Auf der Detailseite des Schlüssels erzeugt „Schlüssel rotieren“ einen neuen; der alte wird danach ungültig. Den neuen Schlüssel dann in SideTube erneut einfügen.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>SideKids</span></a><p>Für Kinder gestaltet. Von Familien gedacht.</p><p class="footer-person">Ein Projekt von <a rel="me author" href="https://christian.steier.xyz/">Christian-Maximilian Steier</a>, Medienpädagoge.<br>Impressum und Datenschutz des Anbieters: <a href="https://christian.steier.xyz/impressum/">christian.steier.xyz/impressum</a></p></div>
+      <nav class="footer-nav" aria-label="Weitere Seiten"><div><p class="footer-title">Apps</p><ul><li><a href="../repos/sidetube.de.html">SideTube</a></li><li><a href="../repos/sideplay.de.html">SidePlay</a></li></ul></div><div><p class="footer-title">Haltung</p><ul><li><a href="../about/philosophy.de.html">Philosophie</a></li><li><a href="../about/gradual-autonomy.de.html">Schrittweise Selbstständigkeit</a></li><li><a href="../about/less-online.de.html">Less Online</a></li></ul></div><div><p class="footer-title">Vertrauen</p><ul><li><a href="../about/privacy.de.html">Datenschutz</a></li><li><a href="../about/security.de.html" aria-current="page">Sicherheit</a></li><li><a href="https://github.com/sidekids" target="_blank" rel="noopener">Quellcode auf GitHub <span aria-hidden="true">↗</span></a></li></ul></div></nav>
+      <p class="footer-meta">Open Source (<a href="https://github.com/sidekids">Lizenz je App</a>) · Texte CC BY 4.0 · <a href="youtube-key.html" lang="en" hreflang="en">English</a></p>
+    </footer>
+  </div></body></html>
