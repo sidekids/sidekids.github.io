@@ -3,7 +3,7 @@
   "vorschau": {
    "video": "assets/video/sidetube/vorschau.mp4",
    "bild": "assets/video/sidetube/vorschau.jpg",
-   "dauer": 86
+   "dauer": 111
   },
   "funktionen": [
    {
@@ -15,7 +15,7 @@
     "text_en": "Approved channels, new episodes to wish for and recently watched videos at a glance.",
     "video": "assets/video/sidetube/startseite.mp4",
     "bild": "assets/video/sidetube/startseite.jpg",
-    "dauer": 19
+    "dauer": 21
    },
    {
     "id": "T2",
@@ -26,7 +26,7 @@
     "text_en": "A channel opens as a list; the video ends without the next one starting.",
     "video": "assets/video/sidetube/kanal-stoebern-kein-autoplay.mp4",
     "bild": "assets/video/sidetube/kanal-stoebern-kein-autoplay.jpg",
-    "dauer": 24
+    "dauer": 26
    },
    {
     "id": "T3",
@@ -37,7 +37,7 @@
     "text_en": "On the SidePhone letter by letter with the wheel; results only from approved content.",
     "video": "assets/video/sidetube/suche-mit-dem-rad.mp4",
     "bild": "assets/video/sidetube/suche-mit-dem-rad.jpg",
-    "dauer": 21
+    "dauer": 23
    },
    {
     "id": "T4",
@@ -48,7 +48,7 @@
     "text_en": "Behind the parent lock: open the review list, look at a video and approve it.",
     "video": "assets/video/sidetube/pruefen-und-freigeben.mp4",
     "bild": "assets/video/sidetube/pruefen-und-freigeben.jpg",
-    "dauer": 25
+    "dauer": 27
    },
    {
     "id": "T5",
@@ -59,7 +59,7 @@
     "text_en": "At the set time the app locks and shows when it opens again.",
     "video": "assets/video/sidetube/schlafmodus.mp4",
     "bild": "assets/video/sidetube/schlafmodus.jpg",
-    "dauer": 25
+    "dauer": 50
    },
    {
     "id": "T6",
@@ -70,7 +70,7 @@
     "text_en": "The video started last sits at the top and resumes with one tap.",
     "video": "assets/video/sidetube/zuletzt-geschaut.mp4",
     "bild": "assets/video/sidetube/zuletzt-geschaut.jpg",
-    "dauer": 26
+    "dauer": 28
    },
    {
     "id": "T7",
@@ -81,7 +81,7 @@
     "text_en": "The whole selection, switchable by channels, videos and shows.",
     "video": "assets/video/sidetube/alle-videos.mp4",
     "bild": "assets/video/sidetube/alle-videos.jpg",
-    "dauer": 25
+    "dauer": 27
    },
    {
     "id": "T8",
@@ -92,7 +92,7 @@
     "text_en": "Opening a playlist; rejected episodes are missing from the list.",
     "video": "assets/video/sidetube/sendungen-playlists.mp4",
     "bild": "assets/video/sidetube/sendungen-playlists.jpg",
-    "dauer": 32
+    "dauer": 34
    },
    {
     "id": "T9",
@@ -103,7 +103,7 @@
     "text_en": "Pasting a link, checking the preview and putting the video on the review list.",
     "video": "assets/video/sidetube/link-hinzufuegen-mit-vorschau.mp4",
     "bild": "assets/video/sidetube/link-hinzufuegen-mit-vorschau.jpg",
-    "dauer": 29
+    "dauer": 31
    },
    {
     "id": "T10",
@@ -114,7 +114,7 @@
     "text_en": "Setting minutes per day and quiet times in the profile.",
     "video": "assets/video/sidetube/tageslimit-und-ruhezeit.mp4",
     "bild": "assets/video/sidetube/tageslimit-und-ruhezeit.jpg",
-    "dauer": 32
+    "dauer": 34
    },
    {
     "id": "T12",
@@ -125,7 +125,7 @@
     "text_en": "Deferring a video; the history shows who decided what and when.",
     "video": "assets/video/sidetube/spaeter-und-verlauf.mp4",
     "bild": "assets/video/sidetube/spaeter-und-verlauf.jpg",
-    "dauer": 31
+    "dauer": 33
    },
    {
     "id": "T13",
@@ -136,7 +136,7 @@
     "text_en": "Switching between two children, each with their own selection.",
     "video": "assets/video/sidetube/profilwechsel.mp4",
     "bild": "assets/video/sidetube/profilwechsel.jpg",
-    "dauer": 21
+    "dauer": 23
    },
    {
     "id": "T14",
@@ -147,7 +147,7 @@
     "text_en": "The search finds nothing; the child sends the topic as a wish.",
     "video": "assets/video/sidetube/themenwunsch.mp4",
     "bild": "assets/video/sidetube/themenwunsch.jpg",
-    "dauer": 31
+    "dauer": 33
    },
    {
     "id": "T15",
@@ -158,7 +158,7 @@
     "text_en": "Asking for more videos like this from the player menu.",
     "video": "assets/video/sidetube/mehr-davon.mp4",
     "bild": "assets/video/sidetube/mehr-davon.jpg",
-    "dauer": 25
+    "dauer": 27
    },
    {
     "id": "T16",
@@ -169,7 +169,7 @@
     "text_en": "New episodes from known channels stay locked until parents approve them.",
     "video": "assets/video/sidetube/neu-bei-bekannten-kanaelen.mp4",
     "bild": "assets/video/sidetube/neu-bei-bekannten-kanaelen.jpg",
-    "dauer": 23
+    "dauer": 25
    },
    {
     "id": "T17",
@@ -180,7 +180,7 @@
     "text_en": "Parents answer the wish; the child sees the answer in the app.",
     "video": "assets/video/sidetube/wuensche-entscheiden.mp4",
     "bild": "assets/video/sidetube/wuensche-entscheiden.jpg",
-    "dauer": 32
+    "dauer": 34
    },
    {
     "id": "T18",
@@ -199,7 +199,7 @@
   "vorschau": {
    "video": "assets/video/sideplay/vorschau.mp4",
    "bild": "assets/video/sideplay/vorschau.jpg",
-   "dauer": 91
+   "dauer": 93
   },
   "funktionen": [
    {
@@ -211,7 +211,7 @@
     "text_en": "Home screen with shows as large pictures, sections at the bottom.",
     "video": "assets/video/sideplay/grosse-kacheln.mp4",
     "bild": "assets/video/sideplay/grosse-kacheln.jpg",
-    "dauer": 18
+    "dauer": 20
    },
    {
     "id": "P2",
@@ -222,7 +222,7 @@
     "text_en": "The last episode continues where it stopped after one tap.",
     "video": "assets/video/sideplay/weiterhoeren.mp4",
     "bild": "assets/video/sideplay/weiterhoeren.jpg",
-    "dauer": 24
+    "dauer": 26
    },
    {
     "id": "P3",
@@ -233,7 +233,7 @@
     "text_en": "Downloading an episode, switching off the network – it still plays.",
     "video": "assets/video/sideplay/offline-hoeren.mp4",
     "bild": "assets/video/sideplay/offline-hoeren.jpg",
-    "dauer": 36
+    "dauer": 38
    },
    {
     "id": "P4",
@@ -244,7 +244,7 @@
     "text_en": "After the chosen time, playback fades out gently.",
     "video": "assets/video/sideplay/schlummer-timer.mp4",
     "bild": "assets/video/sideplay/schlummer-timer.jpg",
-    "dauer": 19
+    "dauer": 21
    },
    {
     "id": "P6",
@@ -255,7 +255,7 @@
     "text_en": "Choosing and playing an album from the family server.",
     "video": "assets/video/sideplay/musik-aus-der-nextcloud.mp4",
     "bild": "assets/video/sideplay/musik-aus-der-nextcloud.jpg",
-    "dauer": 24
+    "dauer": 26
    },
    {
     "id": "P7",
@@ -266,7 +266,7 @@
     "text_en": "Audio plays and audiobooks sit apart from music and start at the beginning.",
     "video": "assets/video/sideplay/hoerspiele.mp4",
     "bild": "assets/video/sideplay/hoerspiele.jpg",
-    "dauer": 22
+    "dauer": 24
    },
    {
     "id": "P5",
@@ -277,7 +277,7 @@
     "text_en": "Behind PIN or pattern: finding and subscribing to a podcast.",
     "video": "assets/video/sideplay/elternsperre-und-podcasts.mp4",
     "bild": "assets/video/sideplay/elternsperre-und-podcasts.jpg",
-    "dauer": 21
+    "dauer": 23
    },
    {
     "id": "P8",
@@ -288,7 +288,7 @@
     "text_en": "Marking an audio play; it appears in its own row on the home screen.",
     "video": "assets/video/sideplay/lieblinge.mp4",
     "bild": "assets/video/sideplay/lieblinge.jpg",
-    "dauer": 21
+    "dauer": 23
    },
    {
     "id": "P9",
@@ -299,7 +299,7 @@
     "text_en": "Creating a list and adding titles for the evening.",
     "video": "assets/video/sideplay/eigene-listen.mp4",
     "bild": "assets/video/sideplay/eigene-listen.jpg",
-    "dauer": 48
+    "dauer": 50
    },
    {
     "id": "P10",
@@ -310,7 +310,7 @@
     "text_en": "Episodes of a series in order, with the next one marked.",
     "video": "assets/video/sideplay/hoerspiele-nach-reihen.mp4",
     "bild": "assets/video/sideplay/hoerspiele-nach-reihen.jpg",
-    "dauer": 27
+    "dauer": 29
    },
    {
     "id": "P11",
@@ -321,7 +321,7 @@
     "text_en": "Setting a minimum age; the title disappears from the child's profile.",
     "video": "assets/video/sideplay/mindestalter-je-werk.mp4",
     "bild": "assets/video/sideplay/mindestalter-je-werk.jpg",
-    "dauer": 38
+    "dauer": 40
    },
    {
     "id": "P12",
@@ -332,7 +332,7 @@
     "text_en": "From a set time the volume is limited.",
     "video": "assets/video/sideplay/nachtruhe.mp4",
     "bild": "assets/video/sideplay/nachtruhe.jpg",
-    "dauer": 29
+    "dauer": 31
    },
    {
     "id": "P13",
@@ -343,7 +343,7 @@
     "text_en": "Downloaded titles in one place, with the storage used.",
     "video": "assets/video/sideplay/downloads.mp4",
     "bild": "assets/video/sideplay/downloads.jpg",
-    "dauer": 23
+    "dauer": 25
    },
    {
     "id": "P14",
@@ -354,7 +354,7 @@
     "text_en": "Results only from the family's own collection, on the SidePhone with the wheel.",
     "video": "assets/video/sideplay/suche.mp4",
     "bild": "assets/video/sideplay/suche.jpg",
-    "dauer": 29
+    "dauer": 33
    },
    {
     "id": "P15",
@@ -365,7 +365,7 @@
     "text_en": "Assigning the server's libraries or hiding them from children.",
     "video": "assets/video/sideplay/mediatheken.mp4",
     "bild": "assets/video/sideplay/mediatheken.jpg",
-    "dauer": 25
+    "dauer": 27
    }
   ]
  }
