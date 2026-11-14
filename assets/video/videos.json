@@ -181,6 +181,17 @@
     "video": "assets/video/sidetube/wuensche-entscheiden.mp4",
     "bild": "assets/video/sidetube/wuensche-entscheiden.jpg",
     "dauer": 32
+   },
+   {
+    "id": "T18",
+    "gruppe": "familie",
+    "titel": "Elternhandy koppeln",
+    "text": "Eltern koppeln ihr iPhone mit dem des Kindes und geben von dort frei. Der Abgleich läuft über das iCloud der Familie.",
+    "titel_en": "Pairing the parent phone",
+    "text_en": "Parents pair their iPhone with the child's and approve from there. Syncing runs through the family's iCloud.",
+    "video": "assets/video/sidetube/elternhandy-koppeln.mp4",
+    "bild": "assets/video/sidetube/elternhandy-koppeln.jpg",
+    "dauer": 32
    }
   ]
  },
