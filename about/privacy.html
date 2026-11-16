@@ -9,6 +9,7 @@
   <link rel="canonical" href="https://sidekids.github.io/about/privacy.html">
   <link rel="alternate" hreflang="de" href="https://sidekids.github.io/about/privacy.de.html">
   <link rel="alternate" hreflang="en" href="https://sidekids.github.io/about/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://sidekids.github.io/about/privacy.fr.html">
   <link rel="alternate" hreflang="x-default" href="https://sidekids.github.io/about/privacy.html">
   <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
   <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
@@ -59,14 +60,14 @@
 
     <section id="sidetube">
       <h2>SideTube (iOS and Android)</h2>
-      <p>This section is the privacy policy for the SideTube apps for iOS and Android. Last updated: 22 October 2026. Responsible: Christian-Maximilian Steier (SideKids); address and contact: <a href="https://christian.steier.xyz/impressum/">christian.steier.xyz/impressum</a>.</p>
+      <p>This section is the privacy policy for the SideTube apps for iOS and Android. Last updated: 16 November 2026. Responsible: Christian-Maximilian Steier (SideKids); address and contact: <a href="https://christian.steier.xyz/impressum/">christian.steier.xyz/impressum</a>.</p>
       <h3>The essentials</h3>
       <ul>
-        <li>What SideTube stores stays on the device. Nobody at SideKids can see this data.</li>
+        <li>What SideTube stores stays on the device. If parents pair their iPhone with the child's phone, part of it is also kept in the family's iCloud. Nobody at SideKids can see this data.</li>
         <li>To show and play videos, SideTube asks YouTube. YouTube (Google) receives the device's IP address and learns which videos are requested – but no account and no name of the child.</li>
         <li>SideTube shows no ads of its own and does not analyse usage. In the YouTube player, YouTube may show ads on some videos.</li>
         <li>Parents can view and delete all data in the app. When the app is deleted, the data is gone.</li>
-        <li>Beyond that, data only leaves the device when parents trigger it: by recommending a video or with the notification to their own Nextcloud.</li>
+        <li>Beyond that, data only leaves the device when parents trigger it: by recommending a video, with the notification to their own Nextcloud or by pairing the parent phone.</li>
       </ul>
       <h3>What is stored on the device</h3>
       <ul>
@@ -109,6 +110,13 @@
       <details class="tech"><summary>Technical details on the notification</summary>
         <p>The message is sent encrypted over HTTPS to a conversation in Nextcloud Talk; the app does not accept unencrypted addresses. Setup uses a code pasted in the settings. Stored are the server address, conversation, user names to mention and the Talk bot's key – on iOS in the Keychain, on Android encrypted.</p>
       </details>
+      <h3>Pairing the parent phone (optional, iPhone only)</h3>
+      <p>Off until parents pair the child's phone with their own iPhone. Then SideTube syncs the devices through iCloud. Synced are profiles with name, age band, daily limit and quiet time, sources and approvals, wishes with their replies and watch times: which video, for how long and when. Not synced are the last search terms, the position where a video was paused and the history of approvals.</p>
+      <p>The data lives in the parent phone's iCloud and is shared with the iCloud account of the child's phone. Apple stores and transfers it under its own responsibility: <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. SideKids has no access to it. For a new wish the parent phone shows a notification, for a reply the child's phone does. Neither the child's name nor the wish is included.</p>
+      <p>What SideTube deletes after 30 days also disappears from iCloud with the next sync. If parents unpair on the parent phone, SideTube deletes the shared data from iCloud. Both devices keep their latest state.</p>
+      <details class="tech"><summary>Technical details on pairing</summary>
+        <p>SideTube uses Apple's CloudKit with the container <code>iCloud.xyz.steier.sidetube</code>. The parent phone creates its own zone in its private database and shares it with the child's account via <code>CKShare</code>. Parents pass on the share link themselves, for example via AirDrop. Notifications go through Apple’s push service. iOS asks for permission first.</p>
+      </details>
       <h3>Recommending videos</h3>
       <p>Parents can recommend a video: on iPhone via Messages or Signal, on Android via Signal or SMS, and on both via „Copy link“. The message contains the title, a link to YouTube and a link that opens the video in SideTube. SideTube does not see who receives it and stores nothing in the process. In the children's area, recommending requires the parent PIN.</p>
       <p>The SideTube link goes through this website. If SideTube is installed, the app opens directly. Otherwise the browser shows a short explanation page; it is hosted by GitHub, and GitHub receives the IP address and learns which video it is about (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>). A video from such a link only goes to the review list after the parent PIN.</p>
@@ -119,12 +127,13 @@
       <h3>Children</h3>
       <p>SideTube is made for children under parental supervision, including children under 13. SideKids collects no personal data from children through SideTube and passes none on. The requests to YouTube and PeerTube described above are technically necessary for playback. SideTube shows no ads of its own and contains no usage analytics, no crash reporting and no additional analytics or advertising code from other providers.</p>
       <h3>Legal bases</h3>
-      <p>SideKids runs no server for the app and receives no personal data through the app. What SideTube stores on the device is in the family's hands. The requests to YouTube or PeerTube happen because parents approve and play content; the operator of each service (Google, a PeerTube server) is responsible for that processing and names its legal basis in its own privacy policy. When the contact above is used, SideKids processes the details to answer the request on the basis of Art. 6(1)(f) GDPR (interest in answering enquiries), or Art. 6(1)(b) where a contractual relationship is concerned.</p>
+      <p>SideKids runs no server for the app and receives no personal data through the app. What SideTube stores on the device is in the family's hands. The requests to YouTube or PeerTube happen because parents approve and play content; the operator of each service (Google, a PeerTube server) is responsible for that processing and names its legal basis in its own privacy policy. The same applies to Apple for the data that pairing keeps in iCloud. When the contact above is used, SideKids processes the details to answer the request on the basis of Art. 6(1)(f) GDPR (interest in answering enquiries), or Art. 6(1)(b) where a contractual relationship is concerned.</p>
       <h3>Transfers to the USA</h3>
-      <p>YouTube is operated by Google; requests to YouTube go to Google servers, including in the USA. Google states that it bases transfers on the EU-U.S. Data Privacy Framework (certification of Google LLC) and, where required, on standard contractual clauses (<a href="https://policies.google.com/privacy/frameworks" rel="noopener">Google: data transfer frameworks</a>, page effective 23 August 2025). When this website is opened, and when a recommendation link is opened in the browser, GitHub (USA) also receives technical details; see GitHub's privacy statement. PeerTube servers are located in various countries depending on the operator. SideKids itself transfers no data to third countries.</p>
+      <p>YouTube is operated by Google; requests to YouTube go to Google servers, including in the USA. Google states that it bases transfers on the EU-U.S. Data Privacy Framework (certification of Google LLC) and, where required, on standard contractual clauses (<a href="https://policies.google.com/privacy/frameworks" rel="noopener">Google: data transfer frameworks</a>, page effective 23 August 2025). When this website is opened, and when a recommendation link is opened in the browser, GitHub (USA) also receives technical details; see GitHub's privacy statement. PeerTube servers are located in various countries depending on the operator. With pairing, Apple stores the shared data in iCloud, depending on Apple's data centres also in the USA; Apple describes this in its privacy policy. SideKids itself transfers no data to third countries.</p>
       <h3>The family's rights</h3>
-      <p>Because the data is on the family's own device, it can be viewed, changed and deleted in the app at any time. Under the General Data Protection Regulation there are also the rights of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection (Art. 21) and, where consent is the basis, withdrawal of consent (Art. 7(3)). The contact above is available for this; SideKids can however only give information about data that SideKids itself holds, and that does not include data from the app. There is a right to lodge a complaint with a data protection supervisory authority (Art. 77), for example in the place of residence. For data processed by Google, GitHub or a PeerTube server, the respective operator is responsible.</p>
+      <p>Because the data is on the family's own device, it can be viewed, changed and deleted in the app at any time. Under the General Data Protection Regulation there are also the rights of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection (Art. 21) and, where consent is the basis, withdrawal of consent (Art. 7(3)). The contact above is available for this; SideKids can however only give information about data that SideKids itself holds, and that does not include data from the app. There is a right to lodge a complaint with a data protection supervisory authority (Art. 77), for example in the place of residence. For data processed by Google, Apple, GitHub or a PeerTube server, the respective operator is responsible.</p>
       <p>Deutsche Fassung: <a href="privacy.de.html#sidetube">Datenschutzerklärung SideTube</a>.</p>
+      <p lang="fr">Version française : <a href="privacy.fr.html#sidetube" hreflang="fr">politique de confidentialité de SideTube</a>.</p>
     </section>
 
     <section>
